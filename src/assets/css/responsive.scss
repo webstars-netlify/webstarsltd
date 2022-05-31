@@ -37,6 +37,14 @@ $value_seven: 1550px;
       width: 100%;
     }
   }
+  .envelope-section {
+    .row {
+      .col-lg-6:first-child {
+        padding: 0px !important;
+        margin: 0px !important;
+      }
+    }
+  }
   .section-content {
     padding: 20px;
     h6,
