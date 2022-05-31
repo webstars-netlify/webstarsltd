@@ -12,6 +12,9 @@ $value_seven: 1550px;
 
 /* Max width 767px */
 @media only #{$media} and ($feature_max : $value_two) {
+  body {
+    overflow-x: hidden;
+  }
   .btn {
     font-size: 13px;
     padding: 13px 33px;
@@ -39,13 +42,20 @@ $value_seven: 1550px;
   }
   .envelope-section {
     .row {
-      .col-lg-6:first-child {
+      .col-lg-6:last-child {
         padding: 0px !important;
-        margin: 0px !important;
       }
     }
   }
   .marketing-guide {
+    .row {
+      .col-lg-6:first-child {
+        padding: 0px !important;
+      }
+      .col-lg-6:last-child {
+        padding: 0px !important;
+      }
+    }
     &-content {
       padding: 20px 20px 0px 20px;
       h6,
@@ -59,6 +69,14 @@ $value_seven: 1550px;
     }
   }
   .insight-display {
+    .row {
+      .col-lg-6:first-child {
+        padding: 0px !important;
+      }
+      .col-lg-6:last-child {
+        padding: 0px !important;
+      }
+    }
     &-one,
     &-two {
       padding: 20px 20px 0px 20px;
