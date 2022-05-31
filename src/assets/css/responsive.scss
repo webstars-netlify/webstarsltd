@@ -55,14 +55,14 @@ $value_seven: 1550px;
       }
     }
   }
+  footer {
+    .row > * {
+      padding: 0px !important;
+    }
+  }
   .marketing-guide {
-    .row {
-      .col-lg-6:first-child {
-        padding: 0px !important;
-      }
-      .col-lg-6:last-child {
-        padding: 0px !important;
-      }
+    .row > * {
+      padding: 0px !important;
     }
     &-image {
       height: 100%;
