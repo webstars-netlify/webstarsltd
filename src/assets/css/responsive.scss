@@ -45,6 +45,18 @@ $value_seven: 1550px;
       }
     }
   }
+  .insight-display {
+    &-one {
+      padding: 20px 20px 0px 20px;
+      h6,
+      h4 {
+        padding: 0px;
+      }
+      h4 {
+        width: 100%;
+      }
+    }
+  }
   .section-content {
     padding: 20px;
     h6,
