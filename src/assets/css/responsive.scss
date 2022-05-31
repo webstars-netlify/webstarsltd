@@ -1,0 +1,271 @@
+// webstarsltd responsive styles will go here.
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 576px;
+$value_two: 767px;
+$value_three: 768px;
+$value_four: 991px;
+$value_five: 992px;
+$value_six: 1199px;
+$value_seven: 1550px;
+
+/* Max width 767px */
+@media only #{$media} and ($feature_max : $value_two) {
+  .btn {
+    font-size: 13px;
+    padding: 13px 33px;
+  }
+  .ptb-80 {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+    }
+  }
+
+  .home-banner {
+    h1 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+  .text {
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  #header {
+    &.headroom {
+      background-color: #ffffff;
+    }
+  }
+  .startp-nav {
+    nav {
+      .navbar-collapse {
+        max-height: 70vh;
+        overflow-y: scroll;
+        margin-top: 10px;
+
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: rgb(165, 162, 162);
+          border-radius: 30px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          padding: 5px 0;
+          > a {
+            margin: 0 0 5px;
+            i,
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pt-80 {
+    padding-top: 50px;
+  }
+  .pb-50 {
+    padding-bottom: 20px;
+  }
+
+  .go-top {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    svg {
+      width: 18px;
+    }
+  }
+  .pb-80 {
+    padding-bottom: 50px;
+  }
+  #header.headroom.navbar-style-four {
+    background-color: #0e314c;
+    .navbar-toggler {
+      .icon-bar {
+        background: #ffffff;
+      }
+    }
+  }
+}
+
+/* Min width 576px to Max width 767px */
+@media only #{$media} and ($feature_min : $value_one) and ($feature_max : $value_two) {
+  .startp-nav {
+    nav {
+      .others-option {
+        .btn.btn-light {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@media only #{$media} and ($feature_max : $value_four) {
+  .section-content {
+    height: 350px;
+    h4 {
+      max-width: 600px;
+    }
+  }
+
+  .insight-display {
+    .container {
+      max-width: 100%;
+      padding: 0px;
+    }
+    &-one {
+      width: 100%;
+      h4 {
+        max-width: 500px;
+      }
+    }
+
+    &-two {
+      float: none;
+      width: 100%;
+      height: 459px;
+
+      h4 {
+        max-width: 500px;
+      }
+    }
+  }
+
+  .marketing-guide {
+    background-color: #140e10;
+    .row {
+      .col-lg-6:first-child {
+        padding-right: 0px !important;
+      }
+      .col-lg-6:last-child {
+        padding-left: 0px !important;
+      }
+    }
+
+    &-content {
+      height: 350px;
+      position: relative;
+
+      h4 {
+        max-width: 550px;
+      }
+
+      button {
+        margin: {
+          top: 40px;
+        }
+        position: unset;
+      }
+    }
+  }
+
+  footer {
+    .row {
+      .col-lg-2,
+      .col-lg-3 {
+        margin-top: 30px;
+      }
+    }
+    .footer_info {
+      h4 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+/* Min width 768px to Max width 991px */
+@media only #{$media} and ($feature_min : $value_three) and ($feature_max : $value_four) {
+  .home-banner {
+    padding: {
+      top: 185px;
+      bottom: 120px;
+    }
+    h1 {
+      line-height: 50px;
+      font-size: 45px;
+    }
+  }
+  .text {
+    h2 {
+      font-size: 45px;
+      line-height: 55px;
+    }
+  }
+
+  #header {
+    &.headroom {
+      padding: 10px 0;
+      &.is-sticky {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .startp-nav {
+    nav {
+      .navbar-nav {
+        .nav-item {
+          a {
+            font-size: 14px;
+            margin-left: 6px;
+            margin-right: 6px;
+          }
+          .dropdown-menu {
+            width: 200px;
+
+            li {
+              a {
+                padding: 6px 15px;
+                font-size: 13.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only #{$media} and ($feature_min : $value_five) and ($feature_max : $value_six) {
+  .startp-nav {
+    nav {
+      .navbar-nav {
+        .nav-item {
+          a {
+            margin: {
+              left: 10px;
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Min width 1200px */
+@media only screen and (min-width: 1350px) {
+  .container {
+    max-width: 1250px;
+  }
+}
