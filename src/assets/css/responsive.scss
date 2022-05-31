@@ -33,6 +33,14 @@ $value_seven: 1550px;
     }
   }
   .global-aud {
+    .row {
+      .col-lg-6:first-child {
+        padding: 0px !important;
+      }
+      .col-lg-6:last-child {
+        padding: 0px !important;
+      }
+    }
     &-image {
       margin: 0px;
       padding: 0px;
@@ -55,6 +63,10 @@ $value_seven: 1550px;
       .col-lg-6:last-child {
         padding: 0px !important;
       }
+    }
+    &-image {
+      height: 100%;
+      width: 100%;
     }
     &-content {
       padding: 20px 20px 0px 20px;
