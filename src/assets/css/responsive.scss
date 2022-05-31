@@ -29,6 +29,26 @@ $value_seven: 1550px;
       line-height: 40px;
     }
   }
+  .global-aud {
+    &-image {
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .section-content {
+    padding: 20px;
+    h6,
+    h4 {
+      padding: 0px;
+    }
+
+    h4 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
   .text {
     h2 {
       font-size: 30px;
