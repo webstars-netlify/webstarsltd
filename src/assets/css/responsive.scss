@@ -12,10 +12,6 @@ $value_seven: 1550px;
 
 /* Max width 767px */
 @media only #{$media} and ($feature_max : $value_two) {
-  body {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
   .btn {
     font-size: 13px;
     padding: 13px 33px;
@@ -41,21 +37,6 @@ $value_seven: 1550px;
       width: 100%;
     }
   }
-  .insight-display {
-    &-one,
-    &-two {
-      width: 100%;
-      // padding: 20px 20px 0px 20px;
-
-      h6,
-      h4 {
-        padding: 0px;
-      }
-      h4 {
-        font-size: 30px;
-      }
-    }
-  }
   .section-content {
     padding: 20px;
     h6,
@@ -66,21 +47,6 @@ $value_seven: 1550px;
     h4 {
       width: 100%;
       max-width: 100%;
-      font-size: 28px;
-    }
-  }
-  .marketing-guide {
-    // padding: 20px 20px 0px 20px;
-
-    h6,
-    h4 {
-      padding: 0px;
-    }
-
-    h4 {
-      width: 100%;
-      max-width: 100%;
-      font-size: 28px;
     }
   }
   .text {
