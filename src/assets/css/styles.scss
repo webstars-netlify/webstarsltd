@@ -26,8 +26,9 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Bitter:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
-$font-family: "Poppins", sans-serif;
+$font-family: "Bitter", sans-serif;
 $light-green-color: #329999;
 $white-color: #ffffff;
 $black-color: #0e314c;
@@ -48,7 +49,7 @@ body {
   scroll-behavior: inherit;
 }
 .custom-container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 img {
@@ -127,6 +128,9 @@ h6 {
 /*================================================
 Navbar CSS
 =================================================*/
+.container {
+  max-width: 1050px !important;
+}
 #header {
   &.headroom {
     position: fixed;
@@ -294,6 +298,7 @@ footer {
   }
 
   blockquote {
+    font-family: "BitterItalic";
     font-size: 30px;
     line-height: 35px;
     letter-spacing: 0.275px;
@@ -382,7 +387,7 @@ Home CSS
   width: 100%;
   max-width: 100%;
   padding: {
-    top: 200px;
+    top: 300px;
     bottom: 200px;
   }
   h1 {
@@ -393,9 +398,11 @@ Home CSS
 
     .d-block {
       color: #294f82;
+      font-family: "Bitter";
     }
     .theme-color {
       color: #309c99;
+      font-family: "Poppins";
     }
   }
 }
@@ -483,7 +490,7 @@ Home CSS
 .insight-display {
   &-one {
     position: relative;
-    width: 80%;
+    width: 470px;
     height: 459px;
     background: rgba(63, 160, 215, 0.1);
 
@@ -529,7 +536,7 @@ Home CSS
   &-two {
     position: relative;
     float: right;
-    width: 80%;
+    width: 470px;
     height: 459px;
     background: rgba(236, 236, 236, 0.5);
 
@@ -604,13 +611,13 @@ Home CSS
 
     h4 {
       color: #57b6b6;
-      font-family: "Bitter";
+      font-family: "Poppins";
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 35px;
       line-height: 40px;
       letter-spacing: -0.5px;
-      max-width: 360px;
+      max-width: 440px;
       padding: {
         left: 40px;
       }
