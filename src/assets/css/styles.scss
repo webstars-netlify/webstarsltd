@@ -671,6 +671,8 @@ Home CSS
 .text {
   h2 {
     font-family: "Poppins";
+    max-width: 1000px !important;
+    margin: 0 auto;
     font-style: normal;
     font-weight: 600;
     font-size: 52px;
