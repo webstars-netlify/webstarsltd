@@ -49,7 +49,7 @@ body {
   scroll-behavior: inherit;
 }
 .custom-container {
-  max-width: 900px;
+  max-width: 940px;
   margin: 0 auto;
 }
 img {
@@ -307,6 +307,10 @@ footer {
     max-width: 400px;
   }
 
+  .author-info-d-sm {
+    display: none;
+  }
+
   .footer_info {
     h4 {
       font-weight: 700;
@@ -333,6 +337,65 @@ footer {
           &:hover,
           &:active {
             color: #63adad;
+          }
+        }
+      }
+    }
+  }
+
+  .author-info {
+    display: block;
+    margin-top: 20px;
+
+    .author {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      color: #ffffff;
+    }
+  }
+
+  .copyright-terms {
+    display: block;
+    margin-top: 20px;
+
+    &-details {
+      ul {
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+          list-style: none;
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+
+          &:first-child {
+            margin-right: 20px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #ffffff;
+          }
+
+          a {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #ffffff;
           }
         }
       }
@@ -429,6 +492,59 @@ Home CSS
     display: flex;
     justify-content: center;
   }
+
+  .section-content {
+    background-color: #ececec;
+    height: 459px;
+    position: relative;
+
+    h6 {
+      color: #2d2d2d;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      padding: {
+        top: 60px;
+        left: 40px;
+      }
+    }
+
+    h4 {
+      color: #2d2d2d;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+      max-width: 410px;
+      padding: {
+        left: 40px;
+      }
+    }
+
+    .stats {
+      position: absolute;
+      bottom: 20px;
+
+      h4 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: -0.9px;
+        color: #ababab;
+
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
 .envelope-section {
@@ -453,36 +569,61 @@ Home CSS
       margin: auto;
     }
   }
-}
-.section-content {
-  background-color: #ececec;
-  height: 459px;
 
-  h6 {
-    color: #2d2d2d;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    padding: {
-      top: 60px;
-      left: 40px;
+  .section-content {
+    background-color: #ececec;
+    height: 459px;
+    position: relative;
+
+    h6 {
+      color: #2d2d2d;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      padding: {
+        top: 60px;
+        left: 40px;
+      }
     }
-  }
 
-  h4 {
-    color: #2d2d2d;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 40px;
-    letter-spacing: -0.5px;
-    max-width: 410px;
-    padding: {
-      left: 40px;
+    h4 {
+      color: #2d2d2d;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+      max-width: 410px;
+      padding: {
+        left: 40px;
+      }
+    }
+
+    .stats {
+      position: absolute;
+      bottom: 20px;
+
+      h4 {
+        & {
+          margin-bottom: 0px;
+        }
+
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: -0.9px;
+        color: #ababab;
+
+        span {
+          font-size: 20px;
+        }
+      }
     }
   }
 }
@@ -516,7 +657,7 @@ Home CSS
       font-size: 35px;
       line-height: 43px;
       letter-spacing: -0.5px;
-      max-width: 350px;
+      max-width: 400px;
       padding: {
         left: 40px;
       }
@@ -555,7 +696,7 @@ Home CSS
     }
 
     h4 {
-      color: $insight-color;
+      color: #329999;
       font-family: "Bitter";
       font-style: normal;
       font-weight: 500;

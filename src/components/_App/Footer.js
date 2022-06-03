@@ -17,6 +17,9 @@ const Footer = () => {
               "Its well designed, easy to use and very flexible without being
               bloated. Great value for money."
             </blockquote>
+            <div className="author-info-d-sm">
+              <h6 className="author">Carlos Wilkerson</h6>
+            </div>
           </div>
           <div className="col-lg-2">
             <div className="footer_info">
@@ -61,6 +64,31 @@ const Footer = () => {
                   <Link to="/">Instagram</Link>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-5">
+            <div className="author-info">
+              <h6 className="author">Carlos Wilkerson</h6>
+            </div>
+          </div>
+          <div className="col-lg-7">
+            <div className="copyright-terms">
+              <div className="copyright-terms-details">
+                <ul>
+                  <li>&copy; Webstars {new Date().getFullYear()}</li>
+                  <li>
+                    <Link to="/">Privacy</Link>
+                  </li>
+                  <li>
+                    <Link to="/">T&Cs</Link>
+                  </li>
+                  <li>
+                    <Link to="/">Cookies</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

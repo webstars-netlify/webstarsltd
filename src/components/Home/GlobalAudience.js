@@ -13,6 +13,11 @@ const GlobalAudience = () => {
               <h4>
                 Delivering localised & personalised content to a global audience
               </h4>
+              <div className="stats">
+                <h4>
+                  20,000 <span>Con sectetur elit</span>
+                </h4>
+              </div>
             </div>
           </div>
           <div className="col-lg-6">

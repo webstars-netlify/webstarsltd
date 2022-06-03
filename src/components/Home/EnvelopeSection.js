@@ -19,6 +19,14 @@ const EnvelopeSection = () => {
                 Overcoming ‘webinar fatigue’ with a results-driven, multichannel
                 campaign{" "}
               </h4>
+              <div className="stats">
+                <h4>
+                  394 <span>Lorem ipsum dolor sit amet</span>
+                </h4>
+                <h4>
+                  585 <span>Con sectetur elit</span>
+                </h4>
+              </div>
             </div>
           </div>
         </div>
