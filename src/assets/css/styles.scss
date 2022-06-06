@@ -129,7 +129,8 @@ h6 {
 Navbar CSS
 =================================================*/
 .container {
-  max-width: 1050px !important;
+  max-width: 1070px !important;
+  width: 1070px !important;
 }
 #header {
   &.headroom {
@@ -140,7 +141,7 @@ Navbar CSS
     left: 0;
     background-color: transparent;
     transition: 0.3s;
-    padding-top: 15px;
+    padding-top: 50px;
 
     &.is-sticky {
       box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
@@ -181,6 +182,10 @@ Navbar CSS
         padding: 15px 0;
 
         a {
+          margin: {
+            left: 10px;
+            right: 10px;
+          }
           font: {
             weight: 600;
             size: 15px;
@@ -193,10 +198,7 @@ Navbar CSS
             top: 0;
             bottom: 0;
           }
-          margin: {
-            left: 14px;
-            right: 14px;
-          }
+
           &:hover,
           &:focus,
           &.active {
@@ -290,21 +292,22 @@ Footer CSS
 footer {
   background: linear-gradient(135deg, #63adad 0%, #234675 51.42%, #393939 100%);
   padding: {
-    top: 120px;
-    bottom: 120px;
+    top: 100px;
+    bottom: 165px;
   }
   .footer_logo {
     margin-bottom: 50px;
   }
 
   blockquote {
-    font-family: "BitterItalic";
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
     font-size: 30px;
     line-height: 35px;
     letter-spacing: 0.275px;
     color: #ffffff;
-    font-style: italic;
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .author-info-d-sm {
@@ -450,21 +453,26 @@ Home CSS
   width: 100%;
   max-width: 100%;
   padding: {
-    top: 300px;
-    bottom: 200px;
+    top: 290px;
+    bottom: 120px;
   }
   h1 {
     text-align: center;
-    font-size: 55px;
-    line-height: 62px;
-    letter-spacing: 0.5px;
 
     .d-block {
       color: #294f82;
+      font-size: 55px;
+      line-height: 62px;
+      letter-spacing: 0.5px;
       font-family: "Bitter";
     }
     .theme-color {
       color: #309c99;
+      font-size: 55px;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 62px;
+      letter-spacing: -0.75px;
       font-family: "Poppins";
     }
   }
@@ -507,8 +515,8 @@ Home CSS
       line-height: 20px;
       letter-spacing: 0.2px;
       padding: {
-        top: 60px;
-        left: 40px;
+        top: 43px;
+        left: 50px;
       }
     }
 
@@ -521,14 +529,15 @@ Home CSS
       line-height: 40px;
       letter-spacing: -0.5px;
       max-width: 410px;
+      margin-top: 20px;
       padding: {
-        left: 40px;
+        left: 50px;
       }
     }
 
     .stats {
       position: absolute;
-      bottom: 20px;
+      bottom: 30px;
 
       h4 {
         font-family: "Poppins";
@@ -540,6 +549,10 @@ Home CSS
         color: #ababab;
 
         span {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 22px;
+          letter-spacing: 0.2px;
           font-size: 20px;
         }
       }
@@ -548,6 +561,8 @@ Home CSS
 }
 
 .envelope-section {
+  padding-top: 35px;
+  padding-bottom: 85px;
   .row {
     .col-lg-6:first-child {
       padding-right: 0px !important;
@@ -584,12 +599,13 @@ Home CSS
       line-height: 20px;
       letter-spacing: 0.2px;
       padding: {
-        top: 60px;
-        left: 40px;
+        top: 45px;
+        left: 50px;
       }
     }
 
     h4 {
+      margin-top: 18px;
       color: #2d2d2d;
       font-family: "Poppins";
       font-style: normal;
@@ -597,31 +613,38 @@ Home CSS
       font-size: 35px;
       line-height: 40px;
       letter-spacing: -0.5px;
-      max-width: 410px;
+      max-width: 420px;
       padding: {
-        left: 40px;
+        left: 45px;
       }
     }
 
     .stats {
       position: absolute;
-      bottom: 20px;
+      bottom: 34px;
+      padding: {
+        left: 6px;
+      }
 
       h4 {
         & {
           margin-bottom: 0px;
+          margin: 0px;
         }
 
         font-family: "Poppins";
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
-        line-height: 45px;
         letter-spacing: -0.9px;
         color: #ababab;
 
         span {
-          font-size: 20px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          letter-spacing: 0.2px;
         }
       }
     }
@@ -644,8 +667,8 @@ Home CSS
       line-height: 20px;
       letter-spacing: 0.2px;
       padding: {
-        top: 40px;
-        left: 40px;
+        top: 48px;
+        left: 46px;
       }
     }
 
@@ -658,14 +681,15 @@ Home CSS
       line-height: 43px;
       letter-spacing: -0.5px;
       max-width: 400px;
+      margin-top: 15px;
       padding: {
-        left: 40px;
+        left: 46px;
       }
     }
 
     &-img {
       position: absolute;
-      bottom: 40px;
+      bottom: 28px;
       left: 0;
       right: 0;
       display: block;
@@ -690,8 +714,8 @@ Home CSS
       line-height: 20px;
       letter-spacing: 0.2px;
       padding: {
-        top: 40px;
-        left: 40px;
+        top: 48px;
+        left: 50px;
       }
     }
 
@@ -704,14 +728,15 @@ Home CSS
       line-height: 43px;
       letter-spacing: -0.5px;
       max-width: 350px;
+      margin-top: 15px;
       padding: {
-        left: 40px;
+        left: 50px;
       }
     }
 
     &-img {
       position: absolute;
-      bottom: 40px;
+      bottom: 28px;
       left: 0;
       right: 0;
       display: block;
@@ -721,6 +746,12 @@ Home CSS
   }
 }
 
+.marketing-guide-section {
+  padding: {
+    top: 70px;
+    bottom: 75px;
+  }
+}
 .marketing-guide {
   background-color: #140e10;
   .row {
@@ -745,8 +776,8 @@ Home CSS
       line-height: 20px;
       letter-spacing: 0.2px;
       padding: {
-        top: 40px;
-        left: 40px;
+        top: 45px;
+        left: 50px;
       }
     }
 
@@ -758,12 +789,14 @@ Home CSS
       font-size: 35px;
       line-height: 40px;
       letter-spacing: -0.5px;
-      max-width: 440px;
+      max-width: 460px;
+      margin-top: 15px;
       padding: {
-        left: 40px;
+        left: 50px;
       }
 
       span.d-block {
+        font-weight: 700;
         color: #fff;
       }
     }
@@ -772,10 +805,10 @@ Home CSS
       display: block;
       background-color: #ececec;
       margin: {
-        left: 40px;
+        left: 50px;
       }
       position: absolute;
-      bottom: 40px;
+      bottom: 45px;
       width: 160px;
       height: 56px;
       border-radius: 50px;
@@ -810,6 +843,8 @@ Home CSS
 }
 
 .text {
+  padding-top: 30px;
+  padding-bottom: 92px;
   h2 {
     font-family: "Poppins";
     max-width: 1000px !important;

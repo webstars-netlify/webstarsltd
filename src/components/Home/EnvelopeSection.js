@@ -4,7 +4,7 @@ import Envelope from "../../assets/images/envelope.png"
 
 const EnvelopeSection = () => {
   return (
-    <div className="envelope-section ptb-80">
+    <div className="envelope-section">
       <div className="custom-container">
         <div className="row">
           <div className="col-lg-6">
@@ -23,7 +23,7 @@ const EnvelopeSection = () => {
                 <h4>
                   394 <span>Lorem ipsum dolor sit amet</span>
                 </h4>
-                <h4>
+                <h4 className="stats-last">
                   585 <span>Con sectetur elit</span>
                 </h4>
               </div>
