@@ -212,6 +212,11 @@ $value_seven: 1550px;
 }
 
 @media only #{$media} and ($feature_max : $value_four) {
+  #header {
+    &.headroom {
+      padding-top: 15px;
+    }
+  }
   .section-content {
     height: 350px;
     h4 {
