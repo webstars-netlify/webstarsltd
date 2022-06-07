@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-2">
-            <div className="footer_info">
+            <div className="footer_info footer_info_first">
               <h4>Find Us</h4>
               <ul>
                 <li>Studio 402</li>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-2">
-            <div className="footer_info">
+            <div className="footer_info footer_info_last">
               <h4>Follow Us</h4>
               <ul>
                 <li>
