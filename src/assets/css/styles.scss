@@ -299,14 +299,15 @@ footer {
   }
 
   blockquote {
-    font-family: "Poppins";
+    font-family: "Bitter";
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
+    font-style: italic;
     letter-spacing: 0.275px;
     color: #ffffff;
-    max-width: 380px;
+    max-width: 400px;
   }
 
   .author-info-d-sm {
@@ -317,7 +318,7 @@ footer {
     margin-left: 0px !important;
   }
   .footer_info_first {
-    margin-left: 20px !important;
+    margin-left: 5px !important;
     font-family: "Poppins";
   }
   .footer_info {
@@ -374,7 +375,7 @@ footer {
   .copyright-terms {
     display: block;
     margin-top: 17px;
-    margin-left: 20px;
+    margin-left: 5px;
 
     &-details {
       ul {
