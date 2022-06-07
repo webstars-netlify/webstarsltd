@@ -217,6 +217,7 @@ $value_seven: 1550px;
       padding-top: 15px;
     }
   }
+
   .section-content {
     height: 350px;
     h4 {
@@ -269,8 +270,8 @@ $value_seven: 1550px;
       button {
         margin: {
           top: 40px;
+          left: 0px;
         }
-        position: unset;
       }
     }
   }
@@ -300,8 +301,10 @@ $value_seven: 1550px;
       display: none;
     }
     .footer_info {
+      margin-left: 0px !important;
       h4 {
         margin-bottom: 15px;
+        margin-top: 30px;
       }
     }
   }
