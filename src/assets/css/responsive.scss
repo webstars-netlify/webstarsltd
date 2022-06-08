@@ -15,6 +15,9 @@ $value_seven: 1550px;
   body {
     overflow-x: hidden;
   }
+  .row {
+    margin-right: 0px !important;
+  }
   .btn {
     font-size: 13px;
     padding: 13px 33px;
@@ -80,8 +83,6 @@ $value_seven: 1550px;
   }
   .marketing-guide {
     .row {
-      margin-right: 0px !important;
-
       & > * {
         padding: 0px !important;
       }
