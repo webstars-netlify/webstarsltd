@@ -11,7 +11,8 @@ const GlobalAudience = () => {
             <div className="section-content">
               <h6>Proskauer Rose LLC</h6>
               <h4>
-                Delivering localised & personalised content to a global audience
+                Delivering localised & personalised content to a{" "}
+                <span className="d-block">global audience</span>
               </h4>
               <div className="stats">
                 <h4>

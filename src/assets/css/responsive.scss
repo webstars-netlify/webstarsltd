@@ -50,6 +50,15 @@ $value_seven: 1550px;
       height: 100%;
       width: 100%;
     }
+    .section-content {
+      padding: 40px !important;
+      h4 {
+        max-width: 100% !important;
+        .d-block {
+          display: inline-block !important;
+        }
+      }
+    }
   }
   .envelope-section {
     .row {
@@ -94,10 +103,10 @@ $value_seven: 1550px;
     &-content {
       height: 400px !important;
       padding: {
-        top: 20px;
-        right: 0px;
+        top: 50px;
+        right: 20px;
         bottom: 0px;
-        left: 20px;
+        left: 40px;
       }
       h6,
       h4 {
@@ -120,7 +129,7 @@ $value_seven: 1550px;
     }
     &-one,
     &-two {
-      padding: 20px 20px 0px 20px;
+      padding: 50px 20px 0px 50px;
       h6,
       h4 {
         padding: 0px;
@@ -133,20 +142,28 @@ $value_seven: 1550px;
   }
   .section-content {
     height: 500px;
-    padding: 20px !important;
+    padding: 50px !important;
     h6,
     h4 {
       padding: 0px !important;
     }
-
+    .d-block {
+      display: inline-block !important;
+    }
     h4 {
-      width: 100%;
+      max-width: 100% !important;
+      font-size: 30px !important;
     }
   }
   .text {
     h2 {
       font-size: 30px;
       line-height: 40px;
+      padding: {
+        top: 40px;
+        left: 30px;
+        right: 30px;
+      }
     }
   }
   #header {

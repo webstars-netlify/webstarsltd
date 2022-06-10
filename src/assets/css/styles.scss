@@ -479,17 +479,98 @@ Home CSS
       font-family: "Bitter";
     }
     .theme-color {
+      font-family: "Poppins";
       color: #309c99;
-      font-size: 55px;
       font-weight: 600;
       font-size: 52px;
       line-height: 62px;
       letter-spacing: -0.75px;
-      font-family: "Poppins";
     }
   }
 }
+.singleproject-sec5-main {
+  .pr-0 {
+    padding-right: 0px !important;
+  }
+  .pl-0 {
+    padding-left: 0px !important;
+  }
+}
+.singprojectSec5-cont {
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  padding: {
+    top: 44px;
+    left: 50px;
+    right: 50px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.singprojectSec5-cont h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-bottom: 14px;
+}
 
+.singprojectSec5-cont h6 {
+  color: #2d2d2d;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+
+  span {
+    color: #2d2d2d;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+  }
+}
+.singprojectSec5-cont span {
+  color: #ababab;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+  display: block;
+}
+.singprojectSec5-cont span b {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: -0.9px;
+  color: #ababab;
+  margin-right: 5px;
+}
+.singprojectSec5-img {
+  width: 100%;
+  height: 100%;
+}
+.singprojectSec5-img.left {
+  background: #2d2d2d;
+}
+.singprojectSec5-img img {
+  width: 100%;
+}
+.envelope-section {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
 .global-aud {
   .row {
     .col-lg-6:first-child {
@@ -501,16 +582,12 @@ Home CSS
   }
 
   &-image {
-    background: linear-gradient(
-      135deg,
-      #2f4d75 0%,
-      #459ccf 51.42%,
-      #393939 100%
-    );
-    height: 459px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   .section-content {
@@ -540,7 +617,7 @@ Home CSS
       font-size: 35px;
       line-height: 40px;
       letter-spacing: -0.5px;
-      max-width: 410px;
+      max-width: 400px;
       margin-top: 20px;
       padding: {
         left: 50px;
