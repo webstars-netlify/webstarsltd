@@ -116,6 +116,11 @@ $value_seven: 1550px;
         width: 100%;
         font-size: 28px;
       }
+      button {
+        margin: {
+          left: 0px !important;
+        }
+      }
     }
   }
   .insight-display {
@@ -301,7 +306,7 @@ $value_seven: 1550px;
     }
 
     &-content {
-      height: 350px;
+      height: 400px;
       position: relative;
 
       h4 {
@@ -311,7 +316,7 @@ $value_seven: 1550px;
       button {
         margin: {
           top: 40px;
-          left: 0px;
+          left: 50px;
         }
       }
     }
