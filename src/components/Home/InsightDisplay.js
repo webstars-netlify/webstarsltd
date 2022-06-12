@@ -8,7 +8,7 @@ const InsightDisplay = () => {
     <div className="insight-display ptb-80">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-md-6 col-lg-6">
             <div className="insight-display-one">
               <h6>Insight</h6>
               <h4>
@@ -21,7 +21,7 @@ const InsightDisplay = () => {
               />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-md-6 col-lg-6">
             <div className="insight-display-two">
               <h6>Insight</h6>
               <h4>How to build Your User Persona</h4>

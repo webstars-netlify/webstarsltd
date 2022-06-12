@@ -2,6 +2,7 @@ import React from "react"
 
 // App level import statements
 import Layout from "../components/_App/Layout"
+import SEO from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
@@ -16,6 +17,7 @@ import Text from "../components/Home/Text"
 const Home = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Navbar />
       <Banner />
       <GlobalAudience />
