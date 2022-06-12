@@ -7,12 +7,12 @@ const EnvelopeSection = () => {
     <div className="envelope-section">
       <div className="custom-container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-md-6 col-lg-6">
             <div className="envelope-section-image">
               <img src={Envelope} alt="" />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-md-6 col-lg-6">
             <div className="section-content">
               <h6>Aon ReMetrica</h6>
               <h4>

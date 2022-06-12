@@ -7,7 +7,7 @@ const GlobalAudience = () => {
     <div className="global-aud ptb-80">
       <div className="custom-container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-md-6 col-lg-6">
             <div className="section-content">
               <h6>Proskauer Rose LLC</h6>
               <h4>
@@ -21,7 +21,7 @@ const GlobalAudience = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-md-6 col-lg-6">
             <div className="global-aud-image">
               <img src={Globe} alt="" />
             </div>

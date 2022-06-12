@@ -270,6 +270,14 @@ $value_seven: 1550px;
       max-width: 600px;
     }
   }
+  .global-aud {
+    .global-aud-image {
+      height: 100% !important;
+      img {
+        height: 100%;
+      }
+    }
+  }
 
   .insight-display {
     .container {
@@ -306,7 +314,7 @@ $value_seven: 1550px;
     }
 
     &-content {
-      height: 400px;
+      height: 450px;
       position: relative;
 
       h4 {
@@ -315,7 +323,7 @@ $value_seven: 1550px;
 
       button {
         margin: {
-          top: 40px;
+          top: 0px;
           left: 50px;
         }
       }

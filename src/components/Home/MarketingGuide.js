@@ -9,7 +9,7 @@ const MarketingGuide = () => {
         <div className="custom-container">
           <div className="marketing-guide">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-md-6 col-lg-6">
                 <div className="marketing-guide-content">
                   <h6>Insight</h6>
                   <h4>
@@ -21,7 +21,7 @@ const MarketingGuide = () => {
                   <button className="btn btn-download">Download</button>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-md-6 col-lg-6">
                 <div className="marketing-guide-image">
                   <img src={Heart} alt="" />
                 </div>
