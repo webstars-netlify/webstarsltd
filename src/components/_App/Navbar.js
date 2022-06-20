@@ -34,11 +34,7 @@ const Navbar = () => {
       <div className="startp-nav">
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
-            <Link
-              to="/it-startup"
-              onClick={toggleNavbar}
-              className="navbar-brand"
-            >
+            <Link to="/" onClick={toggleNavbar} className="navbar-brand">
               <img src={Logo} alt="logo" />
             </Link>
 
@@ -60,25 +56,37 @@ const Navbar = () => {
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">
+                  <Link to="/process" className="nav-link">
                     Process
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">
+                  <Link
+                    to="/projects"
+                    className="nav-link"
+                    activeClassName={"active"}
+                  >
                     Projects
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">
+                  <Link
+                    to="/insights"
+                    className="nav-link"
+                    activeClassName={"active"}
+                  >
                     Insights
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link to="/" className="nav-link">
+                  <Link
+                    to="/profile"
+                    className="nav-link"
+                    activeClassName={"active"}
+                  >
                     Profile
                   </Link>
                 </li>

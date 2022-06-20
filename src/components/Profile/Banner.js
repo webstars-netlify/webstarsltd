@@ -2,7 +2,7 @@ import React from "react"
 
 const Banner = ({ title, subTitle }) => {
   return (
-    <div className="home-banner">
+    <div className="home-banner-profile">
       <h1>
         <span className="d-block">{title}</span>
         <span className="theme-color">{subTitle}</span>

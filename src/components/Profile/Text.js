@@ -5,10 +5,10 @@ const Text = () => {
     <div className="pb-80">
       <div className="text">
         <h2>
-          We are orem ipsum dolor sit amet, consec{" "}
-          <span className="underline-style">our process</span> elit. Proin eget
+          We are orem ipsum dolor sit amet, consec&nbsp;
+          <span className="underline-style">our projects</span> elit. Proin eget
           congue massa. Donec vestib ulum, ipsum eget bibe{" "}
-          <span className="underline-style">team</span>
+          <span className="underline-style">say hello!</span>
         </h2>
       </div>
     </div>

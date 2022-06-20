@@ -19,7 +19,10 @@ const Home = () => {
     <Layout>
       <SEO title="Home" />
       <Navbar />
-      <Banner />
+      <Banner
+        title="Masterful digital marketing"
+        subTitle="Measurable business results"
+      />
       <GlobalAudience />
       <EnvelopeSection />
       <InsightDisplay />

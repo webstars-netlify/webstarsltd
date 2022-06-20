@@ -6,7 +6,7 @@ const Text = () => {
       <div className="text">
         <h2>
           We are orem ipsum dolor sit amet, consec{" "}
-          <span className="underline-style">our process</span> elit. Proin eget
+          <span className="underline-style">our insights</span> elit. Proin eget
           congue massa. Donec vestib ulum, ipsum eget bibe{" "}
           <span className="underline-style">team</span>
         </h2>
