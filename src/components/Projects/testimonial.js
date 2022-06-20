@@ -16,13 +16,13 @@ const Testimonial = () => {
         <div class="custom-container">
           <div class="testiSec-main">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="testiSec-img">
                   <img src={User} alt="" />
                 </div>
               </div>
 
-              <div class="col-lg-8">
+              <div class="col-lg-8 col-sm-12 col-md-6">
                 <div class="testiSec-cont">
                   <h6>We’d love to hear about your project</h6>
                   <p>

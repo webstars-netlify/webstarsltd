@@ -15,6 +15,44 @@ $value_seven: 1550px;
   body {
     overflow-x: hidden;
   }
+  .testimonialSection {
+    padding: 30px 0;
+  }
+  .testiSec-main {
+    .row {
+      .col-lg-3 {
+        padding-right: 0px !important;
+        width: 100% !important;
+      }
+      .col-lg-8 {
+        padding-left: 0px !important;
+        width: 100% !important;
+      }
+    }
+  }
+  .testiSec-img {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .testiSec-cont h6 {
+    font-size: 26px;
+    padding-bottom: 10px;
+    padding: 0px 30px;
+    line-height: 26px;
+    margin-top: 20px;
+  }
+  .testiSec-cont p {
+    padding: 0px 30px;
+    margin-top: 20px;
+  }
+  .testiSec-cont p,
+  .testiSec-cont p a {
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .testiSec-cont a {
+    font-size: 20px;
+  }
   .row {
     margin-right: 0px !important;
   }
@@ -35,7 +73,8 @@ $value_seven: 1550px;
       line-height: 40px;
     }
   }
-  .global-aud {
+  .global-aud,
+  .global-audience {
     .row {
       .col-lg-6:first-child {
         padding: 0px !important;
@@ -60,7 +99,8 @@ $value_seven: 1550px;
       }
     }
   }
-  .envelope-section {
+  .envelope-section,
+  .envelope-section-project {
     .row {
       .col-lg-6:last-child {
         padding: 0px !important;
@@ -270,7 +310,8 @@ $value_seven: 1550px;
       max-width: 600px;
     }
   }
-  .global-aud {
+  .global-aud,
+  .global-audience {
     .global-aud-image {
       height: 100% !important;
       img {
