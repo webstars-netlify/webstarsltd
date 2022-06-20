@@ -1107,3 +1107,96 @@ Home CSS
   font-size: 30px;
   color: #ababab;
 }
+
+/*Process Page Start*/
+
+/*Process Section 1 Start*/
+.processSection1 {
+  padding: 80px 0 820px;
+}
+.processSec1-r-cont {
+  padding-right: 35px;
+}
+.processSec1-r-cont p {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: #0e1828;
+  padding-bottom: 30px;
+}
+.processSec1-r-cont p a {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0.225px;
+  text-decoration-line: underline;
+  display: inline;
+  color: #329999;
+}
+.processSec1-r-cont p a:hover {
+  color: #294f82;
+}
+.processSec1-l-cont {
+  padding-left: 35px;
+}
+.processSec1-l-cont h6 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 1.2;
+  padding: 0 40px;
+  text-align: center;
+  letter-spacing: -0.527778px;
+  color: #57b6b6;
+}
+
+.client-logoSection {
+  padding-bottom: 130px;
+}
+.clientLogoSec-hd {
+  text-align: center;
+  padding: 0 160px 75px;
+}
+.clientLogoSec-hd h6 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.33px;
+  color: #329999;
+}
+.clientLogoSec-main ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clientLogoSec-main ul li {
+  font-size: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 16.66%;
+  width: 16.66%;
+  height: 130px;
+  border-bottom: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  text-align: center;
+}
+.clientLogoSec-main ul li:nth-child(6n) {
+  border-right: none;
+}
+.clientLogoSec-main ul li:nth-last-child(6),
+.clientLogoSec-main ul li:nth-last-child(5),
+.clientLogoSec-main ul li:nth-last-child(4),
+.clientLogoSec-main ul li:nth-last-child(3),
+.clientLogoSec-main ul li:nth-last-child(2),
+.clientLogoSec-main ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+.clientLogoSec-main ul li a img {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.clientLogoSec-main ul li a:hover img {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
