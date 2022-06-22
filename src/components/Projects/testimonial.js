@@ -27,7 +27,7 @@ const Testimonial = () => {
                   <h6>We’d love to hear about your project</h6>
                   <p>
                     Hi, I’m Jez and lorem ipsum dolor amet, consec tetur
-                    adipiscing elit. Mae cenas sed arcu dolor&nbsp;
+                    adipiscing elit. Mae cenas sed arcu dolor&nbsp;&nbsp;
                     <a href="mailto:jobs@webstarsltd.com">
                       please click here to email me
                     </a>

@@ -993,6 +993,12 @@ Home CSS
   span.underline-style {
     text-decoration-line: underline;
     color: #329999;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #777a7b;
+      cursor: pointer;
+    }
   }
 }
 
@@ -1097,8 +1103,13 @@ Home CSS
   padding-bottom: 5px;
   text-align: center;
   letter-spacing: 0.24px;
-  text-decoration-line: underline;
   color: #2d2d2d;
+  transition: all 0.5s;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline dotted;
+  }
 }
 .profile-fb {
   margin-left: -18px;
