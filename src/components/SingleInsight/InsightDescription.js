@@ -5,9 +5,9 @@ import User from "../../assets/images/insight/u1.png"
 const InsightDescription = () => {
   return (
     <section class="singleInsightSection2">
-      <div class="container">
+      <div class="custom-container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="singleInsightSec1-profile">
               <div class="singleInsightSec1-profile-img">
                 <img src={User} alt="" />
@@ -20,12 +20,12 @@ const InsightDescription = () => {
             </div>
           </div>
 
-          <div class="col-md-8">
+          <div class="col-lg-8 col-md-8 col-sm-12">
             <div class="singleInsightSec1-cont">
               <h6>
-                Social media is an important part of any digital marketing
-                strategy - and for B2B marketers, LinkedIn is especially
-                crucial.
+                <span className="d-block">Social media is an</span> important
+                part of any digital marketing strategy - and for B2B marketers,
+                LinkedIn is especially crucial.
               </h6>
 
               <p>

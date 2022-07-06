@@ -4,7 +4,7 @@ import Heart from "../../assets/images/heart.png"
 
 const Guide = () => {
   return (
-    <div className="marketing-guide-section">
+    <div className="single-insight-guide">
       <div className="custom-container">
         <div className="marketing-guide">
           <div className="row">
