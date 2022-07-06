@@ -35,7 +35,8 @@
     "react-feather": "^2.0.9",
     "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.52.1"
+    "sass": "^1.52.1",
+    "utila": "^0.5.0-dev.1"
   },
   "devDependencies": {
     "prettier": "^2.6.2"

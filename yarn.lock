@@ -4576,6 +4576,8 @@ dom-converter@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
   integrity sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==
+  dependencies:
+    utila "~0.4"
 
 dom-helpers@^5.0.1, dom-helpers@^5.2.0, dom-helpers@^5.2.1:
   version "5.2.1"
@@ -10681,10 +10683,10 @@ util.promisify@~1.0.0:
     has-symbols "^1.0.1"
     object.getownpropertydescriptors "^2.1.0"
 
-utila@~0.4:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/utila/-/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
-  integrity sha512-Z0DbgELS9/L/75wZbro8xAnT50pBVFQZ+hUEueGDU5FN51YSCYM+jdxsfCiHjwNP/4LCDD0i/graKpeBnOXKRA==
+utila@^0.5.0-dev.1:
+  version "0.5.0-dev.1"
+  resolved "https://registry.yarnpkg.com/utila/-/utila-0.5.0-dev.1.tgz#fe2f16005b99cb95cd2240cc703c470d4ad58bee"
+  integrity sha512-kDnampKZDhpEs0xs/nScymglZdGa6mvceJylYsaOYXsj+Nm2QJE51ItasLmbMCvXaSa02/qLqMtxUNL+1y6t3w==
 
 utility-types@^3.10.0:
   version "3.10.0"
