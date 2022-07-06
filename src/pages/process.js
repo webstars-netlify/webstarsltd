@@ -8,20 +8,18 @@ import Footer from "../components/_App/Footer"
 
 // Project Page components import statements
 import ProjectBanner from "../components/Projects/ProjectBanner"
-import GlobalAudience from "../components/Projects/GlobalAudience"
-import EnvelopeSection from "../components/Projects/EnvelopeSection"
-import Testimonial from "../components/Projects/testimonial"
-import Text from "../components/Projects/Text"
+import Text from "../components/Process/Text"
 import MarketingGuide from "../components/Home/MarketingGuide"
 import ProcessDescription from "../components/Process/ProcessDescription"
 import Clients from "../components/Process/Clients"
+import Banner from "../components/Process/Banner"
 
 const Process = () => {
   return (
     <Layout>
       <SEO title="Process" />
       <Navbar />
-      <ProjectBanner
+      <Banner
         title="Goodbye vanity metrics"
         subTitle="Hello account based marketing"
       />

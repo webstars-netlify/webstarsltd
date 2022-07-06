@@ -3,7 +3,7 @@ import React from "react"
 const ProcessDescription = () => {
   return (
     <section class="processSection1">
-      <div class="container">
+      <div class="custom-container">
         <div class="row align-items-end">
           <div class="col-md-6">
             <div class="processSec1-r-cont">

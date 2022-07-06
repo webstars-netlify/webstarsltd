@@ -127,6 +127,12 @@ h6 {
     bottom: 80px;
   }
 }
+.ptb-40 {
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
+}
 .pt-80 {
   padding-top: 80px;
 }
@@ -136,6 +142,7 @@ h6 {
 .pb-80 {
   padding-bottom: 80px;
 }
+
 
 /*================================================
 Navbar CSS
@@ -475,7 +482,7 @@ Home CSS
 
 .home-banner,
 .home-banner-project,
-.home-banner-profile {
+.home-banner-profile, .home-banner-process {
   width: 100%;
   max-width: 100%;
   padding: {
@@ -784,11 +791,14 @@ Home CSS
   padding-bottom: 112px;
 }
 .insight-display {
+  .light h4,
+.light h6{color:#fff !important;}
+.dark h6{color:#294F82 !important;}
+.dark h4{color:#7450A7 !important;}
   &-one {
     position: relative;
     width: 470px;
     height: 459px;
-    background: rgba(63, 160, 215, 0.1);
 
     h6 {
       color: $insight-color;
@@ -835,7 +845,6 @@ Home CSS
     float: right;
     width: 470px;
     height: 459px;
-    background: rgba(236, 236, 236, 0.5);
 
     h6 {
       color: $insight-color;
@@ -1123,24 +1132,33 @@ Home CSS
 
 /*Process Section 1 Start*/
 .processSection1 {
-  padding: 80px 0 820px;
+  padding: 68px 0 910px;
+
+  .row {
+    .col-md-6:first-child {
+      width: 55%;
+    }
+    .col-md-6:last-child {
+      width: 45%;
+    }
+  }
 }
 .processSec1-r-cont {
   padding-right: 35px;
 }
 .processSec1-r-cont p {
   font-weight: 400;
-  font-size: 19px;
-  line-height: 1.5;
-  letter-spacing: 0.2px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.225px;
   color: #0e1828;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .processSec1-r-cont p a {
   font-weight: 600;
-  font-size: 19px;
-  line-height: 1.5;
-  letter-spacing: 0.225px;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.225px;
   text-decoration-line: underline;
   display: inline;
   color: #329999;
@@ -1149,31 +1167,37 @@ Home CSS
   color: #294f82;
 }
 .processSec1-l-cont {
-  padding-left: 35px;
+  padding-left: 5px;
 }
 .processSec1-l-cont h6 {
   font-weight: 600;
   font-size: 38px;
   line-height: 1.2;
-  padding: 0 40px;
+  padding: {
+    top: 0px;
+    bottom: 0px;
+    left: 35px;
+    right: 40px;
+  }
   text-align: center;
   letter-spacing: -0.527778px;
   color: #57b6b6;
+  font-style: italic;
 }
 
 .client-logoSection {
-  padding-bottom: 130px;
+  padding-bottom: 70px;
 }
 .clientLogoSec-hd {
   text-align: center;
-  padding: 0 160px 75px;
+  padding: 0 220px 75px;
 }
 .clientLogoSec-hd h6 {
   font-weight: 600;
   font-size: 36px;
-  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.33px;
+  line-height: 42px;
+letter-spacing: 0.33px;
   color: #329999;
 }
 .clientLogoSec-main ul {
@@ -1255,3 +1279,43 @@ Home CSS
 .singprojectSec5-img{width:100%;height:100%;}
 .singprojectSec5-img.left{background:#2D2D2D;}
 .singprojectSec5-img img{width:100%;}
+
+
+/* Single Insights Page Start*/
+.singleInsightSection1{padding-bottom:90px;}
+.singleInsightSec1-main{background-color:#3fa0d71f;padding:130px 50px 70px;}
+.singleInsightSec1-main img{width:100%;}
+
+.singleInsightSection2{padding-bottom:90px;}
+.singleInsightSec1-profile{text-align:center;}
+.singleInsightSec1-profile h6{font-weight:900;font-size:15px;line-height:1.3;text-align:center;letter-spacing:0.2px;color:#0E1828;padding-top:20px;}
+.singleInsightSec1-profile p{font-weight:400;font-size:15px;line-height:1.3;text-align:center;letter-spacing:0.2px;color:#0E1828;padding-bottom:40px;}
+.singleInsightSec1-profile a{font-weight:600;font-size:15px;line-height:1.2;text-align:center;letter-spacing:0.2px;color:#2D2D2D;background:#ECECEC;border-radius:28px;padding:18px 50px;}
+.singleInsightSec1-profile a:hover{background-color:#57B6B6;color:#fff;}
+.singleInsightSec1-profile-img img{border-radius:50%;}
+.singleInsightSec1-cont{}
+.singleInsightSec1-cont h6{font-weight:600;font-size:36px;line-height:1.3;letter-spacing:-0.5px;color:#294F82;padding-bottom:40px;}
+.singleInsightSec1-cont p{font-weight:400;font-size:16px;line-height:1.6;padding-bottom:30px;letter-spacing:0.2px;color:#0E1828;}
+.singleInsightSec1-cont p.last{padding-bottom:0;}
+
+
+/*Insights Page Start*/
+.insights-Banner-cont h6{font-weight:600;font-size:25px;line-height:1.2;letter-spacing:0.333333px;color:#2D2D2D;}
+.insights-Banner-btn ul li{display:inline-block;padding-right:20px;padding-bottom:10px;}
+.insights-Banner-btn ul li a{font-weight:600;font-size:15px;line-height:1.2;text-align:center;letter-spacing:0.2px;color:#2D2D2D;background:#ECECEC;border-radius:28px;padding:15px 35px;}
+.insights-Banner-btn ul li a:hover,
+.insights-Banner-btn ul li.current a{background-color:#57B6B6;color:#fff;}
+.insightSection1 .col-md-6{padding-bottom:60px;}
+.insightSection1 a{width:100%;height:100%;}
+.insightSec1-card{padding:45px 50px;height:100%;width:100%;min-height:500px;display:flex;justify-content:space-between;flex-direction:column;transition:all 0.4s ease-in-out;}
+.insightSection1 a:hover .insightSec1-card{box-shadow:0px 0px 20px 10px rgb(0 0 0 / 25%);}
+.insightSec1-card h5{font-weight:400;font-size:15px;line-height:1.3;letter-spacing:0.2px;color:#294F82;padding-bottom:15px;}
+.insightSec1-card.light h5,
+.insightSec1-card.light h6{color:#fff;}
+.insightSec1-card.dark h5{color:#294F82;}
+.insightSec1-card.dark h6{color:#7450A7;}
+.insightSec1-card h6{font-weight:500;font-size:35px;line-height:1.2;letter-spacing:-0.5px;color:#294F82;padding-bottom:40px;}
+.insightSec1-card img{width:100%;}
+.insightSec1-btn{text-align:center;padding:120px 0 60px;}
+.insightSec1-btn a{width:auto;height:auto;font-weight:600;font-size:15px;line-height:1.2;text-align:center;letter-spacing:0.2px;color:#2D2D2D;background:#ECECEC;border-radius:28px;padding:18px 50px;}
+.insightSec1-btn a:hover{background-color:#57B6B6;color:#fff;}

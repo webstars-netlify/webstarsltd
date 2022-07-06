@@ -3,7 +3,7 @@ import React from "react"
 import InsightOne from "../../assets/images/insight1.png"
 import InsightTwo from "../../assets/images/insight2.png"
 
-const InsightDisplay = () => {
+const Suggestion = () => {
   return (
     <div className="insight-display ptb-80">
       <div className="container">
@@ -44,4 +44,4 @@ const InsightDisplay = () => {
   )
 }
 
-export default InsightDisplay
+export default Suggestion
