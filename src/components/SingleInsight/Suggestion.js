@@ -5,7 +5,7 @@ import InsightTwo from "../../assets/images/insight2.png"
 
 const Suggestion = () => {
   return (
-    <div className="insight-display ptb-80">
+    <div className="insight-display ptb-80 single-insight-display">
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-lg-6">

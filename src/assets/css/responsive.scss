@@ -15,55 +15,70 @@ $value_seven: 1550px;
   body {
     overflow-x: hidden;
   }
+
+  .singleInsightSec1-profile {
+    margin-bottom: 30px;
+  }
+
   .clientLogoSec-main ul {
     padding-left: 0rem !important;
   }
+
   .client-logoSection {
     .clientLogoSec-hd {
       text-align: center;
       padding: 0 50px 75px;
     }
   }
+
   .processSection1 {
     padding: 68px 0 400px;
-  
+
     .row {
       .col-lg-6:first-child {
         width: 100%;
         margin-bottom: 30px;
       }
+
       .col-lg-6:last-child {
         width: 100%;
       }
     }
   }
+
   .processSec1-r-cont {
     padding-right: 10px;
     padding-left: 30px;
   }
+
   .testimonialSection {
     padding: 30px 0;
     text-align: center;
   }
+
   .testimonial-separator {
     padding: 0px 30px;
   }
+
   .testiSec-main {
     .row {
       .col-lg-3 {
         padding-right: 0px !important;
         width: 100% !important;
       }
+
       .col-lg-8 {
         padding-left: 0px !important;
         width: 100% !important;
       }
     }
   }
+
   .testiSec-img {
     padding-bottom: 10px;
     text-align: center;
   }
+
   .testiSec-cont h6 {
     font-size: 26px;
     padding-bottom: 10px;
@@ -71,25 +86,31 @@ $value_seven: 1550px;
     line-height: 26px;
     margin-top: 20px;
   }
+
   .testiSec-cont p {
     padding: 0px 30px;
     margin-top: 20px;
   }
+
   .testiSec-cont p,
   .testiSec-cont p a {
     line-height: 26px;
     font-size: 20px;
   }
+
   .testiSec-cont a {
     font-size: 20px;
   }
+
   .row {
     margin-right: 0px !important;
   }
+
   .btn {
     font-size: 13px;
     padding: 13px 33px;
   }
+
   .ptb-80 {
     padding: {
       top: 50px;
@@ -103,32 +124,39 @@ $value_seven: 1550px;
       line-height: 40px;
     }
   }
+
   .global-aud,
   .global-audience {
     .row {
       .col-lg-6:first-child {
         padding: 0px !important;
       }
+
       .col-lg-6:last-child {
         padding: 0px !important;
       }
     }
+
     &-image {
       margin: 0px;
       padding: 0px;
       height: 100%;
       width: 100%;
     }
+
     .section-content {
       padding: 40px !important;
+
       h4 {
         max-width: 100% !important;
+
         .d-block {
           display: inline-block !important;
         }
       }
     }
   }
+
   .envelope-section,
   .envelope-section-project {
     .row {
@@ -137,8 +165,9 @@ $value_seven: 1550px;
       }
     }
   }
+
   footer {
-    .row > * {
+    .row>* {
       margin: 0px !important;
     }
 
@@ -160,32 +189,39 @@ $value_seven: 1550px;
       }
     }
   }
+
   .marketing-guide {
     .row {
-      & > * {
+      &>* {
         padding: 0px !important;
       }
     }
+
     &-image {
       height: 100%;
       width: 100%;
     }
+
     &-content {
       height: 450px !important;
+
       padding: {
         top: 50px;
         right: 20px;
         bottom: 0px;
         left: 40px;
       }
+
       h6,
       h4 {
         padding: 0px;
       }
+
       h4 {
         width: 100%;
         font-size: 28px;
       }
+
       button {
         margin: {
           left: 0px !important;
@@ -193,48 +229,59 @@ $value_seven: 1550px;
       }
     }
   }
+
   .insight-display {
     .row {
       .col-lg-6:first-child {
         padding: 0px !important;
         margin-bottom: 40px;
       }
+
       .col-lg-6:last-child {
         padding: 0px !important;
       }
     }
+
     &-one,
     &-two {
       padding: 50px 20px 0px 50px;
+
       h6,
       h4 {
         padding: 0px;
       }
+
       h4 {
         width: 100%;
         font-size: 28px;
       }
     }
   }
+
   .section-content {
     height: 500px;
     padding: 50px !important;
+
     h6,
     h4 {
       padding: 0px !important;
     }
+
     .d-block {
       display: inline-block !important;
     }
+
     h4 {
       max-width: 100% !important;
       font-size: 30px !important;
     }
   }
+
   .text {
     h2 {
       font-size: 30px;
       line-height: 40px;
+
       padding: {
         top: 40px;
         left: 30px;
@@ -242,14 +289,17 @@ $value_seven: 1550px;
       }
     }
   }
+
   #header {
     &.headroom {
       background-color: #ffffff;
     }
   }
+
   body {
     overflow-x: hidden;
   }
+
   .startp-nav {
     nav {
       .navbar-collapse {
@@ -260,22 +310,28 @@ $value_seven: 1550px;
         &::-webkit-scrollbar {
           width: 8px;
         }
+
         &::-webkit-scrollbar-track {
           background: #f1f1f1;
         }
+
         &::-webkit-scrollbar-thumb {
           background: rgb(165, 162, 162);
           border-radius: 30px;
         }
+
         &::-webkit-scrollbar-thumb:hover {
           background: #555;
         }
       }
+
       .navbar-nav {
         .nav-item {
           padding: 5px 0;
-          > a {
+
+          >a {
             margin: 0 0 5px;
+
             i,
             svg {
               display: none;
@@ -289,6 +345,7 @@ $value_seven: 1550px;
   .pt-80 {
     padding-top: 50px;
   }
+
   .pb-50 {
     padding-bottom: 20px;
   }
@@ -297,15 +354,19 @@ $value_seven: 1550px;
     width: 35px;
     height: 35px;
     line-height: 30px;
+
     svg {
       width: 18px;
     }
   }
+
   .pb-80 {
     padding-bottom: 50px;
   }
+
   #header.headroom.navbar-style-four {
     background-color: #0e314c;
+
     .navbar-toggler {
       .icon-bar {
         background: #ffffff;
@@ -325,12 +386,14 @@ $value_seven: 1550px;
       }
     }
   }
+
   .client-logoSection {
     .clientLogoSec-hd {
       text-align: center;
       padding: 0 50px 75px !important;
     }
   }
+
   .clientLogoSec-main ul {
     padding-left: 0rem !important;
   }
@@ -345,14 +408,17 @@ $value_seven: 1550px;
 
   .section-content {
     height: 350px;
+
     h4 {
       max-width: 600px;
     }
   }
+
   .global-aud,
   .global-audience {
     .global-aud-image {
       height: 100% !important;
+
       img {
         height: 100%;
       }
@@ -364,8 +430,10 @@ $value_seven: 1550px;
       max-width: 100%;
       padding: 0px;
     }
+
     &-one {
       width: 100%;
+
       h4 {
         max-width: 500px;
       }
@@ -384,10 +452,12 @@ $value_seven: 1550px;
 
   .marketing-guide {
     background-color: #140e10;
+
     .row {
       .col-lg-6:first-child {
         padding-right: 0px !important;
       }
+
       .col-lg-6:last-child {
         padding-left: 0px !important;
       }
@@ -412,11 +482,13 @@ $value_seven: 1550px;
 
   footer {
     .row {
+
       .col-lg-2,
       .col-lg-3 {
         margin-top: 30px;
       }
     }
+
     .author-info-d-sm {
       display: block;
       margin-top: 20px;
@@ -431,11 +503,14 @@ $value_seven: 1550px;
         color: #ffffff;
       }
     }
+
     .author-info {
       display: none;
     }
+
     .footer_info {
       margin-left: 0px !important;
+
       h4 {
         margin-bottom: 15px;
         margin-top: 30px;
@@ -452,16 +527,19 @@ $value_seven: 1550px;
       padding: 0 50px 75px;
     }
   }
+
   .home-banner {
     padding: {
       top: 185px;
       bottom: 120px;
     }
+
     h1 {
       line-height: 50px;
       font-size: 45px;
     }
   }
+
   .text {
     h2 {
       font-size: 45px;
@@ -472,6 +550,7 @@ $value_seven: 1550px;
   #header {
     &.headroom {
       padding: 10px 0;
+
       &.is-sticky {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -488,6 +567,7 @@ $value_seven: 1550px;
             margin-left: 6px;
             margin-right: 6px;
           }
+
           .dropdown-menu {
             width: 200px;
 
@@ -511,11 +591,13 @@ $value_seven: 1550px;
       .col-lg-6:first-child {
         width: 50% !important;
       }
+
       .col-lg-6:last-child {
         width: 50% !important;
       }
     }
   }
+
   .startp-nav {
     nav {
       .navbar-nav {
