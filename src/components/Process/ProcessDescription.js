@@ -5,7 +5,7 @@ const ProcessDescription = () => {
     <section class="processSection1">
       <div class="custom-container">
         <div class="row align-items-end">
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="processSec1-r-cont">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -30,7 +30,7 @@ const ProcessDescription = () => {
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="processSec1-l-cont">
               <h6>
                 “As the old saying goes: just because you can, doesn’t mean you

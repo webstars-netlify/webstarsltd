@@ -7,7 +7,6 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Project Page components import statements
-import ProjectBanner from "../components/Projects/ProjectBanner"
 import Text from "../components/Process/Text"
 import MarketingGuide from "../components/Home/MarketingGuide"
 import ProcessDescription from "../components/Process/ProcessDescription"
