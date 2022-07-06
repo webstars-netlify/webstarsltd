@@ -2,7 +2,7 @@ import React from "react"
 
 const Categories = () => {
   return (
-    <section class="innerBanner">
+    <section class="innerBanner all-insight-banner">
       <div class="container">
         <div class="insights-Banner">
           <div class="row">
