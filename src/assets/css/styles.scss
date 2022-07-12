@@ -555,6 +555,32 @@ Home CSS
   }
 }
 
+.home-banner-single-project {
+  width: 100%;
+  max-width: 100%;
+
+  padding: {
+    top: 288px;
+    bottom: 128px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #329999;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -0.472727px;
+
+    .black {
+      color: #2D2D2D;
+    }
+  }
+}
+
 .home-banner,
 .home-banner-project,
 .home-banner-profile,
@@ -1161,6 +1187,11 @@ Home CSS
   padding: 110px 0px;
 }
 
+.testimonialSection-single-project {
+  padding-top: 110px;
+  padding-bottom: 35px;
+}
+
 .testiSec-main {
   .row {
     .col-lg-3 {
@@ -1183,10 +1214,11 @@ Home CSS
   font-weight: 700;
   font-size: 36px;
   line-height: 46px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   letter-spacing: -0.5px;
   color: #329999;
   margin-bottom: 0px;
+  font-family: 'Poppins';
 }
 
 .testiSec-cont p {
@@ -1195,9 +1227,13 @@ Home CSS
   line-height: 46px;
   letter-spacing: -0.5px;
   color: #777a7b;
-  padding-bottom: 25px;
+  padding-bottom: 12px;
   font-style: italic;
   margin-top: -6px;
+}
+
+.testiSec-cont ul {
+  padding-left: 0rem;
 }
 
 .testiSec-cont a {
@@ -1454,7 +1490,7 @@ Home CSS
 .singl-project-sec1-img {
   width: 100%;
   height: auto;
-  padding: 55px 0 40px 0;
+  padding: 55px 0 32px 0;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1468,16 +1504,20 @@ Home CSS
 
 .singl-project-sec2-cont h6 {
   font-weight: 700;
+  font-family: 'Poppins';
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 46px;
   letter-spacing: -0.5px;
   color: #329999;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .singl-project-sec2-cont p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 28px;
   letter-spacing: 0.225px;
   color: #0E1828;
 }
@@ -1485,7 +1525,7 @@ Home CSS
 
 /*Single Project Section 3 Start*/
 .single-projectSec3 {
-  padding: 120px 0 140px;
+  padding: 120px 0 150px;
   background: linear-gradient(180deg, #294F82 0%, #393939 100%);
 }
 
@@ -1510,8 +1550,9 @@ Home CSS
 
 .singlproSec1-l-cont h6 {
   font-weight: 500;
+  font-family: 'Poppins';
   font-size: 36px;
-  line-height: 1.3;
+  line-height: 46px;
   padding-bottom: 50px;
   letter-spacing: -0.5px;
   color: #fff;
@@ -1519,6 +1560,7 @@ Home CSS
 
 .singlproSec1-l-cont h6 span {
   color: #57B6B6;
+  font-family: 'Poppins';
   font-weight: 700;
 }
 

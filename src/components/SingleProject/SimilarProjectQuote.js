@@ -11,7 +11,7 @@ import User from "../../assets/images/user.png"
 
 const SimilarProjectQuote = () => {
   return (
-    <section class="testimonialSection">
+    <section class="testimonialSection-single-project">
       <div class="custom-container">
         <div class="testiSec-main">
           <div class="row">

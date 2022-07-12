@@ -26,7 +26,7 @@ const SingleProject = () => {
       <Solution />
       <SimilarProjectQuote />
       <GlobalAudience />
-      <div className="testimonial-separator">
+      <div className="testimonial-separator" style={{ marginTop: 16 }}>
         <div className="separator" />
       </div>
       <Text />

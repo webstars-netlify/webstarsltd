@@ -3,7 +3,7 @@ import React from "react"
 const Summary = () => {
   return (
     <section class="single-projectSec2">
-      <div class="container">
+      <div class="custom-container">
         <div class="row">
           <div class="col-md-6 pr-5">
             <div class="singl-project-sec2-cont">

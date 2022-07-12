@@ -1,11 +1,11 @@
 import React from "react"
 
-import Envelope from "../../assets/images/envelope.png"
+import Envelope from "../../assets/images/env.png"
 
 const BannerImage = () => {
   return (
     <section class="single-projectSec1">
-      <div class="container">
+      <div class="custom-container">
         <div class="singl-project-sec1-img">
           <img src={Envelope} alt="" />
         </div>

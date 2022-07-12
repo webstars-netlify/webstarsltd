@@ -3,14 +3,13 @@ import React from "react"
 const Solution = () => {
   return (
     <section class="single-projectSec3">
-      <div class="container">
+      <div class="custom-container">
         <div class="row align-items-stretch">
           <div class="col-md-6">
             <div class="singlproSec1-l-cont">
               <h6>
-                <span>Solution </span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                at sed velit digni ssim sod ales
+                <span>Solution </span>Lorem ips um dolor sit amet, consectetur
+                adipiscing elit. Integer at sed velit digni ssim sod ales
               </h6>
 
               <p>
