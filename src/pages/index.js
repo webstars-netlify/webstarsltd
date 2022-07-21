@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 // App level import statements
 import Layout from "../components/_App/Layout"
@@ -7,30 +8,35 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Home Page components import statements
-import Banner from "../components/Home/Banner"
-import GlobalAudience from "../components/Home/GlobalAudience"
-import EnvelopeSection from "../components/Home/EnvelopeSection"
-import InsightDisplay from "../components/Home/InsightDisplay"
-import MarketingGuide from "../components/Home/MarketingGuide"
-import Text from "../components/Home/Text"
+import MainHome from "../components/Home/MainHome"
 
-const Home = () => {
+import { useStoryblok } from "../utils/storyblok"
+
+const Home = ({ data }) => {
+  let story = data.story
+
+  story = useStoryblok(story)
+
   return (
     <Layout>
       <SEO title="Home" />
       <Navbar />
-      <Banner
-        title="Masterful digital marketing"
-        subTitle="Measurable business results"
-      />
-      <GlobalAudience />
-      <EnvelopeSection />
-      <InsightDisplay />
-      <MarketingGuide />
-      <Text />
+      <MainHome blok={story.content} />
       <Footer />
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    story: storyblokEntry {
+      full_slug
+      name
+      uuid
+      id
+      content
+    }
+  }
+`
 
 export default Home

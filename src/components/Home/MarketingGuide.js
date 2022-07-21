@@ -1,29 +1,30 @@
 import React from "react"
+import { storyblokEditable } from "@storyblok/js"
 
 import Heart from "../../assets/images/heart.png"
 
-const MarketingGuide = () => {
+const MarketingGuide = ({ blok }) => {
   return (
     <>
-      <div className="marketing-guide-section">
-        <div className="custom-container">
-          <div className="marketing-guide">
-            <div className="row">
-              <div className="col-md-6 col-lg-6">
-                <div className="marketing-guide-content">
-                  <h6>Insight</h6>
-                  <h4>
-                    <span className="d-block">
-                      Download our Social Media Marketing guide
-                    </span>{" "}
-                    Honsec tetur adip isc ing elit, Mae cet nas sed arcu dolor.
-                  </h4>
-                  <button className="btn btn-download">Download</button>
+      <div {...storyblokEditable(blok)}>
+        <div className="marketing-guide-section">
+          <div className="custom-container">
+            <div className="marketing-guide">
+              <div className="row">
+                <div className="col-md-6 col-lg-6">
+                  <div className="marketing-guide-content">
+                    <h6>{blok.Subtitle}</h6>
+                    <h4>
+                      <span className="d-block">{blok.Title_White}</span>{" "}
+                      {blok.Title_Cyan}
+                    </h4>
+                    <button className="btn btn-download">Download</button>
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-6 col-lg-6">
-                <div className="marketing-guide-image">
-                  <img src={Heart} alt="" />
+                <div className="col-md-6 col-lg-6">
+                  <div className="marketing-guide-image">
+                    <img src={blok.Section_Image.filename} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
