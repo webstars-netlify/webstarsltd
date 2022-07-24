@@ -1,17 +1,12 @@
 import React from "react"
 
-import Banner from "./Banner"
-import GlobalAudience from "./GlobalAudience"
-import EnvelopeSection from "./EnvelopeSection"
-import InsightDisplay from "./InsightDisplay"
-import MarketingGuide from "./MarketingGuide"
+import ProfileBanner from "./Banner"
+import ProfilesList from "./ProfilesList"
 import Text from "./Text"
 
 const Components = {
-  teaser: Banner,
-  "Global Audience Section": GlobalAudience,
-  "Envelope Section": EnvelopeSection,
-  "Marketing Guide": MarketingGuide,
+  teaser: ProfileBanner,
+  "User Profile Grid": ProfilesList,
   "Bottom Headline Text": Text,
 }
 

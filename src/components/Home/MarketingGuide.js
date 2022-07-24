@@ -1,8 +1,6 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
-import Heart from "../../assets/images/heart.png"
-
 const MarketingGuide = ({ blok }) => {
   return (
     <>

@@ -1158,7 +1158,7 @@ Home CSS
   padding-top: 30px;
   padding-bottom: 92px;
 
-  h2 {
+  h2 p {
     font-family: "Poppins";
     max-width: 1000px !important;
     margin: 0 auto;
@@ -1171,7 +1171,7 @@ Home CSS
     color: #777a7b;
   }
 
-  span.underline-style {
+  .underline-style {
     text-decoration-line: underline;
     color: #329999;
     transition: all 0.5s;

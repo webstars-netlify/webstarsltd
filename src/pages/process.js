@@ -24,7 +24,7 @@ const Process = () => {
       />
       <ProcessDescription />
       <Clients />
-      <MarketingGuide />
+      {/* <MarketingGuide /> */}
       <Text />
       <Footer />
     </Layout>

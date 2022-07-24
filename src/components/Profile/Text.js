@@ -1,15 +1,28 @@
 import React from "react"
+import { storyblokEditable } from "@storyblok/js"
+import { Link } from "gatsby"
+import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
-const Text = () => {
+const Text = ({ blok }) => {
   return (
     <div className="pb-80">
-      <div className="text">
-        <h2>
-          We are orem ipsum dolor sit amet, consec&nbsp;
-          <span className="underline-style">our projects</span> elit. Proin eget
-          congue massa. Donec vestib ulum, ipsum eget bibe{" "}
-          <span className="underline-style">say hello!</span>
-        </h2>
+      <div {...storyblokEditable(blok)}>
+        <div className="text">
+          <h2>
+            {render(blok.bottom_text, {
+              markResolvers: {
+                [MARK_LINK]: (children, props) => {
+                  const { href } = props
+                  return (
+                    <Link to={href} className="underline-style">
+                      {children}
+                    </Link>
+                  )
+                },
+              },
+            })}
+          </h2>
+        </div>
       </div>
     </div>
   )

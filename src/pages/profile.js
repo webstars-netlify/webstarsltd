@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 // App level import statements
 import Layout from "../components/_App/Layout"
@@ -10,18 +11,30 @@ import Footer from "../components/_App/Footer"
 import ProfileBanner from "../components/Profile/Banner"
 import ProfilesList from "../components/Profile/ProfilesList"
 import Text from "../components/Profile/Text"
+import ProfileMain from "../components/Profile/ProfileMain"
+
+import { useStoryblok } from "../utils/storyblok"
 
 const Profile = () => {
+  let { story } = useStaticQuery(graphql`
+    query {
+      story: storyblokEntry(name: { eq: "Profile" }) {
+        full_slug
+        name
+        uuid
+        id
+        content
+      }
+    }
+  `)
+
+  story = useStoryblok(story)
+
   return (
     <Layout>
       <SEO title="Projects" />
       <Navbar />
-      <ProfileBanner
-        title="We’d love to hear from you"
-        subTitle="Meet the stars of the show"
-      />
-      <ProfilesList />
-      <Text />
+      <ProfileMain blok={story.content} />
       <Footer />
     </Layout>
   )
