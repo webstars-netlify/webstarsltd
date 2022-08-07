@@ -5,6 +5,7 @@ import { storyblokEditable } from "@storyblok/js"
 import DynamicComponent from "./DyanmicComponent"
 
 const MainSingleProject = ({ blok }) => {
+  console.log(JSON.stringify(blok))
   const content =
     blok.body &&
     blok.body.map(childBlok => (

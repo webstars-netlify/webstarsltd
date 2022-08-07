@@ -7,7 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const res = await graphql(`
     query {
-      allStoryblokEntry(filter: { field_component: { eq: "Single Project" } }) {
+      allStoryblokEntry(filter: { field_component: { eq: "SingleProject" } }) {
         edges {
           node {
             field_component

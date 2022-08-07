@@ -1,10 +1,18 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
-import MainComponent from "./MainComponent"
+// Page level import statements
+import BannerText from "./BannerText"
+import BannerImage from "./BannerImage"
+import Summary from "./Summary"
+import Solution from "./Solution"
+import SimilarProjectQuote from "./SimilarProjectQuote"
+import GlobalAudience from "../Home/GlobalAudience"
+import Text from "../Projects/Text"
 
 const Components = {
-  "Single Project": MainComponent,
+  "Summary Section": Summary,
+  bottom_text: Text,
 }
 
 const DyanmicComponent = ({ blok }) => {
