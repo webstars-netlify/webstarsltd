@@ -1,5 +1,4 @@
 import React from "react"
-import { storyblokEditable } from "@storyblok/js"
 
 // Page level import statements
 import BannerText from "./BannerText"
@@ -13,6 +12,11 @@ import Text from "../Projects/Text"
 const Components = {
   "Summary Section": Summary,
   bottom_text: Text,
+  similar_project_card: SimilarProjectQuote,
+  single_project_banner: BannerImage,
+  single_project_banner_text: BannerText,
+  single_project_solution: Solution,
+  // project_display: GlobalAudience,
 }
 
 const DyanmicComponent = ({ blok }) => {
@@ -21,11 +25,7 @@ const DyanmicComponent = ({ blok }) => {
     return <Component blok={blok} key={blok._uid} />
   }
 
-  return (
-    <div>
-      <div>DynamicComponent</div>
-    </div>
-  )
+  return <></>
 }
 
 export default DyanmicComponent

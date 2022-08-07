@@ -1,16 +1,17 @@
 import React from "react"
+import { storyblokEditable } from "@storyblok/js"
 
-import Envelope from "../../assets/images/env.png"
-
-const BannerImage = () => {
+const BannerImage = ({ blok }) => {
   return (
-    <section class="single-projectSec1">
-      <div class="custom-container">
-        <div class="singl-project-sec1-img">
-          <img src={Envelope} alt="" />
+    <div {...storyblokEditable(blok)}>
+      <section class="single-projectSec1">
+        <div class="custom-container">
+          <div class="singl-project-sec1-img">
+            <img src={blok.banner_img.filename} alt="" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 

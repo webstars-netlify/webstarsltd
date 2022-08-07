@@ -9,7 +9,7 @@ const Text = ({ blok }) => {
       <div {...storyblokEditable(blok)}>
         <div className="text">
           <h2>
-            {render(blok.bottom_text, {
+            {render(blok.text, {
               markResolvers: {
                 [MARK_LINK]: (children, props) => {
                   const { href } = props
