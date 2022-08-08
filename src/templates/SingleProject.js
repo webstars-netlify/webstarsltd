@@ -9,12 +9,6 @@ import Footer from "../components/_App/Footer"
 
 // Page level import statements
 import MainSingleProject from "../components/SingleProject/MainSingleProject"
-import BannerImage from "../components/SingleProject/BannerImage"
-import Summary from "../components/SingleProject/Summary"
-import Solution from "../components/SingleProject/Solution"
-import SimilarProjectQuote from "../components/SingleProject/SimilarProjectQuote"
-import GlobalAudience from "../components/Home/GlobalAudience"
-import Text from "../components/Projects/Text"
 
 import { useStoryblok } from "../utils/storyblok"
 

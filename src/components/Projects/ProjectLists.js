@@ -1,17 +1,21 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import GlobalAudience from "./GlobalAudience"
-import EnvelopeSection from "./EnvelopeSection"
+import ListComponent from "./ListComponent"
 
 const ProjectLists = () => {
   let { story } = useStaticQuery(graphql`
     query {
-      allStoryblokEntry(filter: { field_component: { eq: "SingleProject" } }) {
+      story: allStoryblokEntry(
+        filter: { field_component: { eq: "SingleProject" } }
+      ) {
         edges {
           node {
             field_component
             slug
+            uuid
+            id
+            name
             content
           }
         }
@@ -20,9 +24,11 @@ const ProjectLists = () => {
   `)
 
   return (
-    <div>
-      <div>ProjectLists</div>
-    </div>
+    <>
+      {story.edges.map((originalStory, index) => (
+        <ListComponent story={originalStory.node} key={index} />
+      ))}
+    </>
   )
 }
 

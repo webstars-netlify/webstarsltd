@@ -16,15 +16,3 @@ const MainSingleProject = ({ blok }) => {
 }
 
 export default MainSingleProject
-{
-  /* <BannerText />
-      <BannerImage />
-      <Summary />
-      <Solution />
-      <SimilarProjectQuote />
-      <GlobalAudience />
-      <div className="testimonial-separator" style={{ marginTop: 16 }}>
-        <div className="separator" />
-      </div>
-      <Text /> */
-}

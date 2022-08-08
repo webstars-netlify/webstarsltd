@@ -828,6 +828,15 @@ Home CSS
   padding-top: 35px;
   padding-bottom: 85px;
 
+  a {
+    display: block;
+
+    &:hover {
+      transform: translateY(-20px);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+
   .row {
     .col-lg-6:first-child {
       padding-right: 0px !important;
