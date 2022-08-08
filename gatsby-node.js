@@ -4,6 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const projectTemplate = path.resolve("./src/templates/SingleProject.js")
+  const insightTemplate = path.resolve("./src/templates/SingleInsight.js")
 
   const res = await graphql(`
     query {

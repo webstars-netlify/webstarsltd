@@ -2,7 +2,7 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 // Page level import statements
-import DynamicComponent from "./DyanmicComponent"
+import DynamicComponent from "./DynamicComponent"
 
 const MainSingleProject = ({ blok }) => {
   const content =
