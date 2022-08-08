@@ -5,31 +5,26 @@ import { render, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
 const Text = ({ blok }) => {
   return (
-    <>
-      <div className="testimonial-separator" style={{ marginTop: 16 }}>
-        <div className="separator" />
-      </div>
-      <div className="pb-80">
-        <div {...storyblokEditable(blok)}>
-          <div className="text">
-            <h2>
-              {render(blok.text, {
-                markResolvers: {
-                  [MARK_LINK]: (children, props) => {
-                    const { href } = props
-                    return (
-                      <Link to={href} className="underline-style">
-                        {children}
-                      </Link>
-                    )
-                  },
+    <div className="pb-80">
+      <div {...storyblokEditable(blok)}>
+        <div className="text">
+          <h2>
+            {render(blok.bottom_description[0].text, {
+              markResolvers: {
+                [MARK_LINK]: (children, props) => {
+                  const { href } = props
+                  return (
+                    <Link to={href} className="underline-style">
+                      {children}
+                    </Link>
+                  )
                 },
-              })}
-            </h2>
-          </div>
+              },
+            })}
+          </h2>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

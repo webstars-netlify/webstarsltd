@@ -7,7 +7,7 @@ import Summary from "./Summary"
 import Solution from "./Solution"
 import SimilarProjectQuote from "./SimilarProjectQuote"
 import GlobalAudience from "../Home/GlobalAudience"
-import Text from "../Projects/Text"
+import Text from "./Text"
 
 const Components = {
   "Summary Section": Summary,
