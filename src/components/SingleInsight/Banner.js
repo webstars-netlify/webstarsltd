@@ -1,15 +1,18 @@
 import React from "react"
+import { storyblokEditable } from "@storyblok/js"
 
-const Banner = () => {
+const Banner = ({ blok }) => {
   return (
-    <section class="home-banner-single-insight">
-      <div class="container">
-        <h1>
-          <span className="d-block">Social Media strategies</span>
-          <span className="theme-color">& the importance of LinkedIn</span>
-        </h1>
-      </div>
-    </section>
+    <div {...storyblokEditable(blok)}>
+      <section class="home-banner-single-insight">
+        <div class="container">
+          <h1>
+            <span className="d-block">{blok.headline}</span>
+            <span className="theme-color">{blok.subtitle}</span>
+          </h1>
+        </div>
+      </section>
+    </div>
   )
 }
 

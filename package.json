@@ -30,6 +30,7 @@
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-source-storyblok": "^4.0.1",
     "gatsby-transformer-sharp": "^4.15.0",
+    "moment": "^2.29.4",
     "postcss-preset-env": "^7.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^2.4.0",

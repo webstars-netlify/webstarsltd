@@ -1,28 +1,32 @@
 import React from "react"
+import { storyblokEditable } from "@storyblok/js"
 
-import Heart from "../../assets/images/heart.png"
-
-const Guide = () => {
+const Guide = ({ blok }) => {
   return (
-    <div className="single-insight-guide">
-      <div className="custom-container">
-        <div className="marketing-guide">
-          <div className="row">
-            <div className="col-md-6 col-lg-6">
-              <div className="marketing-guide-content">
-                <h6>Insight</h6>
-                <h4>
-                  <span className="d-block">
-                    Download our Social Media Marketing guide
-                  </span>{" "}
-                  Honsec tetur adip isc ing elit, Mae cet nas sed arcu dolor.
-                </h4>
-                <button className="btn btn-download">Download</button>
+    <div {...storyblokEditable(blok)}>
+      <div className="single-insight-guide">
+        <div className="custom-container">
+          <div className="marketing-guide">
+            <div className="row">
+              <div className="col-md-6 col-lg-6">
+                <div className="marketing-guide-content">
+                  <h6>{blok.marketing_guide[0].Subtitle}</h6>
+                  <h4>
+                    <span className="d-block">
+                      {blok.marketing_guide[0].Title_White}
+                    </span>{" "}
+                    {blok.marketing_guide[0].Title_Cyan}
+                  </h4>
+                  <button className="btn btn-download">Download</button>
+                </div>
               </div>
-            </div>
-            <div className="col-md-6 col-lg-6">
-              <div className="marketing-guide-image">
-                <img src={Heart} alt="" />
+              <div className="col-md-6 col-lg-6">
+                <div className="marketing-guide-image">
+                  <img
+                    src={blok.marketing_guide[0].Section_Image.filename}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>

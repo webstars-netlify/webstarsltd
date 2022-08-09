@@ -9,7 +9,11 @@ import Suggestion from "./Suggestion"
 import Text from "./Text"
 
 const Components = {
-  teaser: Banner,
+  teaser_text: Banner,
+  insight_banner_img: BannerImage,
+  description_section: InsightDescription,
+  guide: MarketingGuide,
+  bottom_text_copy: Text,
 }
 
 const DynamicComponent = ({ blok }) => {

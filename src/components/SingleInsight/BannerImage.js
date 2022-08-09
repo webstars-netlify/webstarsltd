@@ -1,16 +1,20 @@
 import React from "react"
+import { storyblokEditable } from "@storyblok/js"
 
-import BannerPhoto from "../../assets/images/insight/img-l-1.png"
-
-const BannerImage = () => {
+const BannerImage = ({ blok }) => {
   return (
-    <section class="singleInsightSection1">
-      <div class="custom-container">
-        <div class="singleInsightSec1-main">
-          <img src={BannerPhoto} alt="" />
+    <div {...storyblokEditable(blok)}>
+      <section class="singleInsightSection1">
+        <div class="custom-container">
+          <div
+            class="singleInsightSec1-main"
+            style={{ backgroundColor: blok.background_color_hex_code }}
+          >
+            <img src={blok.banner_img.filename} alt="" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
 
