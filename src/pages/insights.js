@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 // App level import statements
 import Layout from "../components/_App/Layout"
@@ -7,16 +8,30 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Page level import statements
-import Categories from "../components/Insights/Categories"
-import InsightLists from "../components/Insights/InsightLists"
+import MainComponent from "../components/Insights/MainComponent"
+
+import { useStoryblok } from "../utils/storyblok"
 
 const Insights = () => {
+  let { story } = useStaticQuery(graphql`
+    query {
+      story: storyblokEntry(name: { eq: "Insights" }) {
+        full_slug
+        name
+        uuid
+        id
+        content
+      }
+    }
+  `)
+
+  story = useStoryblok(story)
+
   return (
     <Layout>
       <SEO title="Insights" />
       <Navbar />
-      <Categories />
-      <InsightLists />
+      <MainComponent blok={story.content} />
       <Footer />
     </Layout>
   )
