@@ -28,15 +28,11 @@ const InsightLists = () => {
       <div className="insight-display ptb-40 insight-display-list">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-lg-6">
-              {story.edges.map((originalStory, index) => (
-                <ListComponent
-                  story={originalStory.node}
-                  key={index}
-                  index={index}
-                />
-              ))}
-            </div>
+            {story.edges.map((originalStory, index) => (
+              <div className="col-md-6 col-lg-6" key={index}>
+                <ListComponent story={originalStory.node} index={index} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
