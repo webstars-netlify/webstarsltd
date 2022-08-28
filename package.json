@@ -31,6 +31,7 @@
     "gatsby-source-storyblok": "^4.0.1",
     "gatsby-transformer-sharp": "^4.15.0",
     "moment": "^2.29.4",
+    "native-forms-react": "^1.9.55",
     "postcss-preset-env": "^7.7.2",
     "react": "^17.0.1",
     "react-bootstrap": "^2.4.0",
@@ -38,6 +39,9 @@
     "react-feather": "^2.0.9",
     "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
+    "react-modal": "^3.15.1",
+    "react-notifications": "^1.7.4",
+    "react-toastify": "^9.0.8",
     "sass": "^1.52.1",
     "storyblok-rich-text-react-renderer": "^2.6.0",
     "utila": "^0.5.0-dev.1"

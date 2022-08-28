@@ -1,11 +1,39 @@
-import React from "react"
+import React, { useState } from "react"
 import { storyblokEditable } from "@storyblok/js"
 import moment from "moment"
 import { render } from "storyblok-rich-text-react-renderer"
-
+import NativeForms from "native-forms-react";
+import Modal from "react-modal";
 const InsightDescription = ({ blok }) => {
+  const [showPopup, setShowPopup] = useState(false);
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      width: "36%",
+      padding: "50px 30px",
+    },
+  };
+  function closeModal() {
+    setShowPopup(false);
+  }
+
   return (
     <div {...storyblokEditable(blok)}>
+
+      <Modal
+        isOpen={showPopup}
+        style={customStyles}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+      >
+        <NativeForms form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db" onClose={(result) => console.log("on-close", result)} onSend={(result) => console.log("on-send", result?.form?.completed)} />
+      </Modal>
+
       <section class="singleInsightSection2">
         <div class="custom-container">
           <div class="row">
@@ -18,10 +46,9 @@ const InsightDescription = ({ blok }) => {
                 <h6>By {blok.user_name}</h6>
                 <p>{moment(blok.date).format("MMMM Do, YYYY")}</p>
 
-                <a href="#">ShareThis</a>
+                <a onClick={() => setShowPopup(true)}>ShareThis</a>
               </div>
             </div>
-
             <div class="col-lg-8 col-md-8 col-sm-12">
               <div class="singleInsightSec1-cont">
                 <h6>{blok.title}</h6>

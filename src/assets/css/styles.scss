@@ -340,6 +340,19 @@ Navbar CSS
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .home-banner-process ,
+  .clientLogoSec-main,
+  .pb-80,
+  section.testimonialSection,
+  .home-banner-project,
+  section.innerBanner.all-insight-banner,
+  .home-banner-profile,
+  footer{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
 /*================================================
 Footer CSS
 =================================================*/
@@ -1963,4 +1976,55 @@ Home CSS
 .insightSec1-btn a:hover {
   background-color: #57B6B6;
   color: #fff;
+}
+
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background-color: #294f8299 !important;
+  z-index: 9999;
+}
+
+.nf-inputs-wrapper.wrapper-contact-R1kc span {
+  font-family: 'Poppins' !important;
+  color: #8D8D8D !important;
+  font-weight: 400 !important;
+}
+
+.nf-input {
+  color: #0E1828 !important;
+  background-color: #F6F6F6 !important;
+  border: 0px !important;
+  -webkit-text-fill-color: #000 !important;
+  font-family: 'Poppins';
+}
+
+.nf-input-container {
+  margin-bottom: 20px !important;
+}
+
+span.nf-question-header.header-R1kc {
+  font-size: 32px !important;
+  color: #329999 !important;
+  font-weight: 500 !important;
+  font-family: 'Poppins' !important;
+  line-height: 40px !important;
+  text-align: left !important;
+}
+
+div#R1kc {
+  border: 0px !important;
+}
+
+button#nf-submit-button {
+  background-color: #57B6B6 !important;
+  width: 200px !important;
+  border-radius: 50px !important;
+}
+
+.nf-inputs-wrapper.wrapper-contact-R1kc {
+  padding: 0px 20px !important;
+}
+
+.nf-powered-by-container{
+  display: none;
 }
