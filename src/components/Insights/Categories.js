@@ -1,7 +1,11 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
-const Categories = ({ blok }) => {
+const Categories = ({ blok, setCategoryTitle, categoryTitle }) => {
+  const switchCategoryHandler = title => {
+    setCategoryTitle(title)
+  }
+
   return (
     <div {...storyblokEditable(blok)}>
       <section class="innerBanner all-insight-banner">
@@ -18,8 +22,17 @@ const Categories = ({ blok }) => {
                 <div class="insights-Banner-btn">
                   <ul>
                     {blok.category_list.map(category => (
-                      <li key={category.title}>
-                        <a href="#">{category.title}</a>
+                      <li
+                        key={category.title}
+                        className={
+                          categoryTitle === category.title ? "current" : ""
+                        }
+                      >
+                        <button
+                          onClick={() => switchCategoryHandler(category.title)}
+                        >
+                          {category.title}
+                        </button>
                       </li>
                     ))}
                   </ul>

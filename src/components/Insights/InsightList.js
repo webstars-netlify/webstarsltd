@@ -2,8 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import ListComponent from "./ListComponent"
+import { useStoryblok } from "../../utils/storyblok"
 
-const InsightLists = () => {
+const InsightLists = ({ categoryTitle }) => {
   let { story } = useStaticQuery(graphql`
     query {
       story: allStoryblokEntry(

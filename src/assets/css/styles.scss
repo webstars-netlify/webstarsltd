@@ -341,18 +341,20 @@ Navbar CSS
 }
 
 @media only screen and (max-width: 500px) {
-  .home-banner-process ,
+
+  .home-banner-process,
   .clientLogoSec-main,
   .pb-80,
   section.testimonialSection,
   .home-banner-project,
   section.innerBanner.all-insight-banner,
   .home-banner-profile,
-  footer{
+  footer {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
 }
+
 /*================================================
 Footer CSS
 =================================================*/
@@ -1874,7 +1876,7 @@ Home CSS
   padding-top: 6px;
 }
 
-.insights-Banner-btn ul li a {
+.insights-Banner-btn ul li button {
   color: #2D2D2D;
   background: #ECECEC;
   border-radius: 28px;
@@ -1887,10 +1889,13 @@ Home CSS
   font-size: 15px;
   text-align: center;
   letter-spacing: 0.2px;
+  outline: none;
+  border: none;
+  transition: all .5s;
 }
 
-.insights-Banner-btn ul li a:hover,
-.insights-Banner-btn ul li.current a {
+.insights-Banner-btn ul li button:hover,
+.insights-Banner-btn ul li.current button {
   background-color: #57B6B6;
   color: #fff;
 }
@@ -2025,6 +2030,6 @@ button#nf-submit-button {
   padding: 0px 20px !important;
 }
 
-.nf-powered-by-container{
+.nf-powered-by-container {
   display: none;
 }

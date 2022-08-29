@@ -1,16 +1,13 @@
 import React from "react"
 
 import Banner from "./Banner"
-import GlobalAudience from "./GlobalAudience"
-import EnvelopeSection from "./EnvelopeSection"
-import InsightDisplay from "./InsightDisplay"
 import MarketingGuide from "./MarketingGuide"
+import ProjectList from "./ProjectList"
 import Text from "./Text"
 
 const Components = {
   teaser: Banner,
-  "Global Audience Section": GlobalAudience,
-  "Envelope Section": EnvelopeSection,
+  show_list: ProjectList,
   "Marketing Guide": MarketingGuide,
   "Bottom Headline Text": Text,
 }
@@ -21,11 +18,7 @@ const DynamicComponent = ({ blok }) => {
     return <Component blok={blok} key={blok._uid} />
   }
 
-  return (
-    <div>
-      <div>DynamicComponent</div>
-    </div>
-  )
+  return <></>
 }
 
 export default DynamicComponent
