@@ -11,8 +11,8 @@ const Navbar = () => {
   }
 
   React.useEffect(() => {
-    let elementId = window !== undefined && document.getElementById("header")
-    window !== undefined &&
+    if (typeof document !== "undefined") {
+      let elementId = document.getElementById("header")
       document.addEventListener("scroll", () => {
         if (window.scrollY > 170) {
           elementId.classList.add("is-sticky")
@@ -20,7 +20,8 @@ const Navbar = () => {
           elementId.classList.remove("is-sticky")
         }
       })
-    window.scrollTo(0, 0)
+      window.scrollTo(0, 0)
+    }
   })
 
   const classOne = menu
