@@ -11,14 +11,15 @@ const Navbar = () => {
   }
 
   React.useEffect(() => {
-    let elementId = document.getElementById("header")
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
-        elementId.classList.add("is-sticky")
-      } else {
-        elementId.classList.remove("is-sticky")
-      }
-    })
+    let elementId = window !== undefined && document.getElementById("header")
+    window !== undefined &&
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 170) {
+          elementId.classList.add("is-sticky")
+        } else {
+          elementId.classList.remove("is-sticky")
+        }
+      })
     window.scrollTo(0, 0)
   })
 

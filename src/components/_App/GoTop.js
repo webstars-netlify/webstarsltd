@@ -6,20 +6,23 @@ const GoTop = ({ scrollStepInPx, delayInMs }) => {
   const timeoutRef = React.useRef(null)
 
   React.useEffect(() => {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 170) {
-        setThePosition(true)
-      } else {
-        setThePosition(false)
-      }
-    })
+    if (window !== undefined) {
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 170) {
+          setThePosition(true)
+        } else {
+          setThePosition(false)
+        }
+      })
+    }
   }, [])
 
   const onScrollStep = () => {
-    if (window.pageYOffset === 0) {
+    if (window !== undefined && window.pageYOffset === 0) {
       clearInterval(timeoutRef.current)
     }
-    window.scroll(0, window.pageYOffset - scrollStepInPx)
+    window !== undefined &&
+      window.scroll(0, window.pageYOffset - scrollStepInPx)
   }
 
   const scrollToTop = () => {
