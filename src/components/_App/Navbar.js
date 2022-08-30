@@ -11,7 +11,7 @@ const Navbar = () => {
   }
 
   React.useEffect(() => {
-    if (typeof document !== "undefined") {
+    if (typeof window === "undefined" || !window.document) {
       let elementId = document.getElementById("header")
       document.addEventListener("scroll", () => {
         if (window.scrollY > 170) {
