@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import { storyblokEditable } from "@storyblok/js"
 import moment from "moment"
 import { render } from "storyblok-rich-text-react-renderer"
-import NativeForms from "native-forms-react";
-import Modal from "react-modal";
+// import NativeForms from "native-forms-react";
+import Modal from "react-modal"
 const InsightDescription = ({ blok }) => {
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false)
   const customStyles = {
     content: {
       top: "50%",
@@ -17,21 +17,20 @@ const InsightDescription = ({ blok }) => {
       width: "36%",
       padding: "50px 30px",
     },
-  };
+  }
   function closeModal() {
-    setShowPopup(false);
+    setShowPopup(false)
   }
 
   return (
     <div {...storyblokEditable(blok)}>
-
       <Modal
         isOpen={showPopup}
         style={customStyles}
         onRequestClose={closeModal}
         contentLabel="Example Modal"
       >
-        <NativeForms form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db" onClose={(result) => console.log("on-close", result)} onSend={(result) => console.log("on-send", result?.form?.completed)} />
+        {/* <NativeForms form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db" onClose={(result) => console.log("on-close", result)} onSend={(result) => console.log("on-send", result?.form?.completed)} /> */}
       </Modal>
 
       <section class="singleInsightSection2">
