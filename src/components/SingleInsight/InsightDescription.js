@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { storyblokEditable } from "@storyblok/js"
 import moment from "moment"
 import { render } from "storyblok-rich-text-react-renderer"
-// import NativeForms from "native-forms-react"
+import NativeForms from "native-forms-react"
 import Modal from "react-modal"
 
 const InsightDescription = ({ blok }) => {
@@ -31,11 +31,11 @@ const InsightDescription = ({ blok }) => {
         onRequestClose={closeModal}
         contentLabel="Example Modal"
       >
-        {/* <NativeForms
+        <NativeForms
           form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
           onClose={result => console.log("on-close", result)}
           onSend={result => console.log("on-send", result?.form?.completed)}
-        /> */}
+        />
       </Modal>
 
       <section class="singleInsightSection2">

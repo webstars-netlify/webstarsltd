@@ -8,7 +8,7 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Page level import statements
-import MainInsight from "../components/SingleInsight/MainInsight"
+import InsightComponent from "../components/SingleInsight/InsightComponent"
 
 import { useStoryblok } from "../utils/storyblok"
 
@@ -21,7 +21,7 @@ const SingleInsight = ({ data }) => {
     <Layout>
       <SEO title="Single Insights" />
       <Navbar />
-      <MainInsight blok={story.content} />
+      <InsightComponent blok={story.content} />
       <Footer />
     </Layout>
   )

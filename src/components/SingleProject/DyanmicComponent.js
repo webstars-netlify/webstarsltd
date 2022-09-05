@@ -6,7 +6,6 @@ import BannerImage from "./BannerImage"
 import Summary from "./Summary"
 import Solution from "./Solution"
 import SimilarProjectQuote from "./SimilarProjectQuote"
-import GlobalAudience from "../Home/GlobalAudience"
 import Text from "./Text"
 
 const Components = {

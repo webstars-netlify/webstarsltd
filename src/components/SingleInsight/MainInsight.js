@@ -4,7 +4,7 @@ import { storyblokEditable } from "@storyblok/js"
 // Page level import statements
 import DynamicComponent from "./DynamicComponent"
 
-const MainSingleProject = ({ blok }) => {
+const MainInsight = ({ blok }) => {
   const content =
     blok.body &&
     blok.body.map(childBlok => (
@@ -14,4 +14,4 @@ const MainSingleProject = ({ blok }) => {
   return <div {...storyblokEditable(blok)}>{content}</div>
 }
 
-export default MainSingleProject
+export default MainInsight

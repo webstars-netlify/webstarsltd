@@ -8,11 +8,6 @@ import Navbar from "../components/_App/Navbar"
 import Footer from "../components/_App/Footer"
 
 // Project Page components import statements
-import Text from "../components/Process/Text"
-import MarketingGuide from "../components/Home/MarketingGuide"
-import ProcessDescription from "../components/Process/ProcessDescription"
-import Clients from "../components/Process/Clients"
-import Banner from "../components/Process/Banner"
 import ProcessMain from "../components/Process/ProcessMain"
 
 import { useStoryblok } from "../utils/storyblok"
@@ -37,14 +32,6 @@ const Process = () => {
       <SEO title="Process" />
       <Navbar />
       <ProcessMain blok={story.content} />
-      {/* <Banner
-        title="Goodbye vanity metrics"
-        subTitle="Hello account based marketing"
-      />
-      <ProcessDescription />
-      <Clients /> */}
-      {/* <MarketingGuide /> */}
-      {/* <Text /> */}
       <Footer />
     </Layout>
   )
