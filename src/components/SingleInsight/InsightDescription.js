@@ -30,18 +30,20 @@ const InsightDescription = ({ blok }) => {
 
   return (
     <div {...storyblokEditable(blok)}>
-      <Modal
-        isOpen={showPopup}
-        style={customStyles}
-        onRequestClose={closeModal}
-        contentLabel="Example Modal"
-      >
-        <NativeForms
-          form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
-          onClose={result => console.log("on-close", result)}
-          onSend={result => console.log("on-send", result?.form?.completed)}
-        />
-      </Modal>
+      <React.Suspense fallback={<></>}>
+        <Modal
+          isOpen={showPopup}
+          style={customStyles}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+        >
+          <NativeForms
+            form="https://form.nativeforms.com/JZDdV1jZm80UPJnWH1Db"
+            onClose={result => console.log("on-close", result)}
+            onSend={result => console.log("on-send", result?.form?.completed)}
+          />
+        </Modal>
+      </React.Suspense>
 
       <section class="singleInsightSection2">
         <div class="custom-container">
