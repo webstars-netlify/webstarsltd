@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useStoryblokState } from "gatsby-source-storyblok"
 
 // App level import statements
 import Layout from "../components/_App/Layout"
@@ -25,7 +26,8 @@ const Home = () => {
     }
   `)
 
-  story = useStoryblok(story)
+  story = useStoryblokState(story)
+  // story = useStoryblok(story)
 
   return (
     <Layout>
