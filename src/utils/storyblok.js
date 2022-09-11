@@ -5,8 +5,14 @@ const sbConfig = config.plugins.find(
   item => item.resolve === "gatsby-source-storyblok"
 )
 
+const shouldUseBridge =
+  typeof window !== 'undefined'
+    ? window.location !== window.parent.location
+    : false
+
 storyblokInit({
   accessToken: sbConfig.options.accessToken,
+  bridge: shouldUseBridge,
   use: [apiPlugin],
 })
 
