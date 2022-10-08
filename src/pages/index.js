@@ -31,7 +31,12 @@ const Home = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO
+        title="Home"
+        description={
+          "Webstars are experts in everything digital - from design and development, to strategy and ongoing support, we are a full-service agency here to bring your digital aspirations to life."
+        }
+      />
       <Navbar />
       <MainHome blok={story.content} />
       <Footer />
