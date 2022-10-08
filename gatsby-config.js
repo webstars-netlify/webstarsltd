@@ -10,7 +10,34 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+        }
+      `,
+      serialize: ({ site, allSitePage }) => {
+        return allSitePage.edges.map(({ node }) => {
+          return {
+            url: site.siteMetadata.siteUrl + node.path,
+            changefreq: "daily",
+            priority: 0.7,
+          }
+        })
+      },
+    },
     {
       resolve: "gatsby-source-storyblok",
       options: {
