@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://webstarsltd.netlify.app`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
@@ -7,6 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-source-storyblok",
       options: {
