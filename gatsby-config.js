@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://webstarsltd.netlify.app`,
+    siteUrl: `https://webstarsltd.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-sass`,
