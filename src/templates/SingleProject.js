@@ -21,7 +21,7 @@ const SingleProject = ({ data }) => {
     <Layout>
       <SEO title="Single Project" />
       <Navbar />
-      <MainSingleProject blok={story.content} />
+      <MainSingleProject blok={story.content} url={story.full_slug} />
       <Footer />
     </Layout>
   )

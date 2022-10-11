@@ -21,7 +21,7 @@ const SingleInsight = ({ data }) => {
     <Layout>
       <SEO title="Single Insights" />
       <Navbar />
-      <InsightComponent blok={story.content} />
+      <InsightComponent blok={story.content} url={story.full_slug} />
       <Footer />
     </Layout>
   )

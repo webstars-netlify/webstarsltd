@@ -2033,3 +2033,30 @@ button#nf-submit-button {
 .nf-powered-by-container {
   display: none;
 }
+
+.viewMoreParent {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.viewMoreBtn {
+  background-color: #ECECEC;
+  color: #000;
+  outline: none;
+  border: none;
+  height: 60px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 50px;
+  line-height: 60px;
+  transition: .5s all;
+  text-align: center;
+
+  &:hover {
+    background-color: #57B6B6;
+    color: #FFF;
+  }
+}

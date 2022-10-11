@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Modal from "react-modal"
 import { storyblokEditable } from "@storyblok/js"
 import moment from "moment"
 import { render } from "storyblok-rich-text-react-renderer"
@@ -8,7 +9,6 @@ const NativeForms = React.lazy(() => import("native-forms-react"))
 
 //   })
 // }
-import Modal from "react-modal"
 
 const InsightDescription = ({ blok }) => {
   const [showPopup, setShowPopup] = useState(false)

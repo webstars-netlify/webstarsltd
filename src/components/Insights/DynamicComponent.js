@@ -8,7 +8,7 @@ const Components = {
   show_insights_list: InsightList,
 }
 
-const DynamicComponent = ({ blok }) => {
+const DynamicComponent = ({ blok, showMore }) => {
   const [categoryTitle, setCategoryTitle] = useState(
     typeof window !== "undefined"
       ? localStorage.getItem("title") !== null
@@ -31,6 +31,7 @@ const DynamicComponent = ({ blok }) => {
         key={blok._uid}
         categoryTitle={categoryTitle}
         setCategoryTitle={setCategoryTitle}
+        showMore={showMore}
       />
     )
   }

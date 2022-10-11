@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 // App level import statements
@@ -13,7 +13,7 @@ import MainComponent from "../components/Insights/MainComponent"
 import { useStoryblok } from "../utils/storyblok"
 
 const Insights = () => {
-  let { story } = useStaticQuery(graphql`
+  let { story, insights } = useStaticQuery(graphql`
     query {
       story: storyblokEntry(name: { eq: "Insights" }) {
         full_slug
@@ -22,16 +22,43 @@ const Insights = () => {
         id
         content
       }
+      insights: allStoryblokEntry(
+        filter: { field_component: { eq: "Single Insight" } }
+      ) {
+        edges {
+          node {
+            field_component
+            slug
+            uuid
+            id
+            name
+            content
+          }
+        }
+      }
     }
   `)
+  const [showMore, setShowMore] = useState(insights.edges.slice(0, 8))
 
   story = useStoryblok(story)
+
+  const updateViewMore = () => {
+    const copy = insights.edges.slice(0)
+    setShowMore(copy)
+  }
 
   return (
     <Layout>
       <SEO title="Insights" />
       <Navbar />
-      <MainComponent blok={story.content} />
+      <MainComponent blok={story.content} showMore={showMore} />
+      {showMore.length < 10 ? (
+        <div className="viewMoreParent">
+          <button onClick={updateViewMore} className="viewMoreBtn">
+            View More
+          </button>
+        </div>
+      ) : null}
       <Footer />
     </Layout>
   )
