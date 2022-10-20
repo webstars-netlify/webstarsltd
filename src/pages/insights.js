@@ -48,9 +48,11 @@ const Insights = () => {
   }
 
   return (
+    // Main Layout Component
     <Layout>
       <SEO title="Insights" />
       <Navbar />
+      {/* Body Component Starts here */}
       <MainComponent blok={story.content} showMore={showMore} />
       {showMore.length < 10 ? (
         <div className="viewMoreParent">
@@ -59,6 +61,7 @@ const Insights = () => {
           </button>
         </div>
       ) : null}
+      {/* Body Component Ends here */}
       <Footer />
     </Layout>
   )

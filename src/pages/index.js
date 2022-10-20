@@ -11,9 +11,8 @@ import Footer from "../components/_App/Footer"
 // Home Page components import statements
 import MainHome from "../components/Home/MainHome"
 
-import { useStoryblok } from "../utils/storyblok"
-
 const Home = () => {
+  // Query for Home Page Data
   let { story } = useStaticQuery(graphql`
     query {
       story: storyblokEntry(name: { eq: "Home" }) {
@@ -27,9 +26,9 @@ const Home = () => {
   `)
 
   story = useStoryblokState(story)
-  // story = useStoryblok(story)
 
   return (
+    // Main Layout Component
     <Layout>
       <SEO
         title="Home"
@@ -38,7 +37,9 @@ const Home = () => {
         }
       />
       <Navbar />
+      {/* Body Component Starts here */}
       <MainHome blok={story.content} />
+      {/* Body Component Ends here */}
       <Footer />
     </Layout>
   )

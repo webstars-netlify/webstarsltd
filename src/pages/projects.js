@@ -28,10 +28,13 @@ const Home = () => {
   story = useStoryblok(story)
 
   return (
+    // Main Layout Component
     <Layout>
       <SEO title="Projects" />
       <Navbar />
+      {/* Body Component Starts here */}
       <MainComponent blok={story.content} />
+      {/* Body Component Ends here */}
       <Footer />
     </Layout>
   )

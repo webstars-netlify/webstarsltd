@@ -28,10 +28,13 @@ const Process = () => {
   story = useStoryblok(story)
 
   return (
+    // Main Layout Component
     <Layout>
       <SEO title="Process" />
       <Navbar />
+      {/* Body Component Starts here */}
       <ProcessMain blok={story.content} />
+      {/* Body Component Ends here */}
       <Footer />
     </Layout>
   )
