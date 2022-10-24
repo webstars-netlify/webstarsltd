@@ -30,7 +30,8 @@ const ProfilesList = ({ blok }) => {
                       <p>{profileItem.user_role}</p>
 
                       <ul class="mn-social-icon">
-                        <li>
+                        {
+                          profileItem.user_social_profile[0] && <li>
                           <Link
                             to={
                               profileItem.user_social_profile[0].profile_url.url
@@ -40,8 +41,10 @@ const ProfilesList = ({ blok }) => {
                             <FontAwesomeIcon icon={faFacebookSquare} />
                           </Link>
                         </li>
+                        }  
 
-                        <li>
+                        {
+                          profileItem.user_social_profile[1] && <li>
                           <Link
                             to={
                               profileItem.user_social_profile[1].profile_url.url
@@ -51,8 +54,10 @@ const ProfilesList = ({ blok }) => {
                             <FontAwesomeIcon icon={faLinkedin} />
                           </Link>
                         </li>
+                        }
 
-                        <li>
+                        {
+                          profileItem.user_social_profile[2] && <li>
                           <Link
                             to={
                               profileItem.user_social_profile[2].profile_url.url
@@ -62,6 +67,7 @@ const ProfilesList = ({ blok }) => {
                             <FontAwesomeIcon icon={faTwitter} />
                           </Link>
                         </li>
+                        }
                       </ul>
                     </Link>
                   </div>
