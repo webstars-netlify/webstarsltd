@@ -31,42 +31,17 @@ const ProfilesList = ({ blok }) => {
 
                       <ul class="mn-social-icon">
                         {
-                          profileItem.user_social_profile[0] && <li>
+                          profileItem.user_social_profile.map((socialProfile) => <li>
                           <Link
                             to={
-                              profileItem.user_social_profile[0].profile_url.url
+                              socialProfile.profile_url.url
                             }
                             className="profile-fb"
+                            key={socialProfile._uid}
                           >
-                            <FontAwesomeIcon icon={faFacebookSquare} />
+                            <FontAwesomeIcon icon={socialProfile.Title === 'LinkedIn' ? faLinkedin : socialProfile.Title === 'Facebook' ? faFacebookSquare : faTwitter } />
                           </Link>
-                        </li>
-                        }  
-
-                        {
-                          profileItem.user_social_profile[1] && <li>
-                          <Link
-                            to={
-                              profileItem.user_social_profile[1].profile_url.url
-                            }
-                            className="profile-li"
-                          >
-                            <FontAwesomeIcon icon={faLinkedin} />
-                          </Link>
-                        </li>
-                        }
-
-                        {
-                          profileItem.user_social_profile[2] && <li>
-                          <Link
-                            to={
-                              profileItem.user_social_profile[2].profile_url.url
-                            }
-                            className="profile-tw"
-                          >
-                            <FontAwesomeIcon icon={faTwitter} />
-                          </Link>
-                        </li>
+                        </li>)
                         }
                       </ul>
                     </Link>
