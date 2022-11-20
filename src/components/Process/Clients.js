@@ -11,13 +11,19 @@ const Clients = ({ blok }) => {
             <h6>{blok.headline}</h6>
           </div>
 
+            {/* <div className="clientsLogo">
+            {blok.logos.map(logo => (
+                <div key={logo.id} className="logo-img">
+                    <img src={logo.filename} alt="" />
+                </div>
+              ))}
+            </div> */}
+
           <div class="clientLogoSec-main">
             <ul>
               {blok.logos.map(logo => (
                 <li key={logo.id}>
-                  <Link to="/process">
                     <img src={logo.filename} alt="" />
-                  </Link>
                 </li>
               ))}
             </ul>
