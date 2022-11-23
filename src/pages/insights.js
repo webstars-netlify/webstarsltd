@@ -24,7 +24,6 @@ const Insights = () => {
       }
       insights: allStoryblokEntry(
         filter: { field_component: { eq: "Single Insight" } }
-        sort: { order: DESC }
       ) {
         edges {
           node {
