@@ -83,11 +83,11 @@ const Navbar = () => {
 
                 <li className="nav-item">
                   <Link
-                    to="/profile"
+                    to="/team"
                     className="nav-link"
                     activeClassName={"active"}
                   >
-                    Profile
+                    Team
                   </Link>
                 </li>
               </ul>
