@@ -21,7 +21,6 @@ const ProfilesList = ({ blok }) => {
                   key={`${profileItem._uid}`}
                 >
                   <div class="profileSec1-card">
-                    {/* <Link to="#"> */}
                     <div class="profileSec1-img">
                       <img src={profileItem.user_image.filename} alt="" />
                     </div>
@@ -51,7 +50,6 @@ const ProfilesList = ({ blok }) => {
                         </li>
                       ))}
                     </ul>
-                    {/* </Link> */}
                   </div>
                 </div>
               ))}
