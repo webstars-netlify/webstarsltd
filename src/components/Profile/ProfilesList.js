@@ -36,6 +36,7 @@ const ProfilesList = ({ blok }) => {
                             to={socialProfile.profile_url.url}
                             className="profile-fb"
                             key={socialProfile._uid}
+                            target="_blank"
                           >
                             <FontAwesomeIcon
                               icon={
