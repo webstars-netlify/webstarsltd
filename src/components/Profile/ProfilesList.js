@@ -21,30 +21,36 @@ const ProfilesList = ({ blok }) => {
                   key={`${profileItem._uid}`}
                 >
                   <div class="profileSec1-card">
-                    <Link to="#">
-                      <div class="profileSec1-img">
-                        <img src={profileItem.user_image.filename} alt="" />
-                      </div>
+                    {/* <Link to="#"> */}
+                    <div class="profileSec1-img">
+                      <img src={profileItem.user_image.filename} alt="" />
+                    </div>
 
-                      <h6>{profileItem.user_name}</h6>
-                      <p>{profileItem.user_role}</p>
+                    <h6>{profileItem.user_name}</h6>
+                    <p>{profileItem.user_role}</p>
 
-                      <ul class="mn-social-icon">
-                        {
-                          profileItem.user_social_profile.map((socialProfile) => <li>
+                    <ul class="mn-social-icon">
+                      {profileItem.user_social_profile.map(socialProfile => (
+                        <li>
                           <Link
-                            to={
-                              socialProfile.profile_url.url
-                            }
+                            to={socialProfile.profile_url.url}
                             className="profile-fb"
                             key={socialProfile._uid}
                           >
-                            <FontAwesomeIcon icon={socialProfile.Title === 'LinkedIn' ? faLinkedin : socialProfile.Title === 'Facebook' ? faFacebookSquare : faTwitter } />
+                            <FontAwesomeIcon
+                              icon={
+                                socialProfile.Title === "LinkedIn"
+                                  ? faLinkedin
+                                  : socialProfile.Title === "Facebook"
+                                  ? faFacebookSquare
+                                  : faTwitter
+                              }
+                            />
                           </Link>
-                        </li>)
-                        }
-                      </ul>
-                    </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    {/* </Link> */}
                   </div>
                 </div>
               ))}
