@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Modal from "react-modal"
 import { storyblokEditable } from "@storyblok/js"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import moment from "moment"
 import {
   faFacebookSquare,
