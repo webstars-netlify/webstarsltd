@@ -9,7 +9,16 @@ const MarketingGuide = ({ blok }) => {
       <div {...storyblokEditable(blok)}>
         <div className="marketing-guide-section">
           <div className="custom-container">
-            <div className="marketing-guide">
+            <div
+              className="marketing-guide"
+              style={{
+                backgroundColor: `${
+                  blok.background_color_hex
+                    ? blok.background_color_hex
+                    : "#140e10"
+                }`,
+              }}
+            >
               <div className="row">
                 <div className="col-md-6 col-lg-6">
                   <div className="marketing-guide-content">
