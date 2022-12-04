@@ -66,41 +66,43 @@ const InsightDescription = ({ blok }) => {
                 <h6>By {blok.user_name}</h6>
                 <p>{moment(blok.date).format("MMMM Do, YYYY")}</p>
 
-                <Link
-                  to={"https://uk.linkedin.com/company/webstars-ltd"}
-                  className="profile-fb"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
-                <Link
-                  to={"https://twitter.com/WebstarsLtd"}
-                  className="profile-fb"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </Link>
-                <Link
-                  to={"https://www.instagram.com/webstarsltd/"}
-                  className="profile-fb"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
-                <Link
-                  to={"https://www.facebook.com/webstarsltd"}
-                  className="profile-fb"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faFacebookSquare} />
-                </Link>
-                <Link
-                  to={"https://www.youtube.com/@webstarsltd"}
-                  className="profile-fb"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faYoutube} />
-                </Link>
+                <div className="insight-socials">
+                  <Link
+                    to={"https://uk.linkedin.com/company/webstars-ltd"}
+                    className="profile-fb"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Link>
+                  <Link
+                    to={"https://twitter.com/WebstarsLtd"}
+                    className="profile-fb"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </Link>
+                  <Link
+                    to={"https://www.instagram.com/webstarsltd/"}
+                    className="profile-fb"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </Link>
+                  <Link
+                    to={"https://www.facebook.com/webstarsltd"}
+                    className="profile-fb"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faFacebookSquare} />
+                  </Link>
+                  <Link
+                    to={"https://www.youtube.com/@webstarsltd"}
+                    className="profile-fb"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </Link>
+                </div>
               </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
