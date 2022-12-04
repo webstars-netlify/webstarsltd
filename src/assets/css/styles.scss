@@ -1362,7 +1362,7 @@ Home CSS
 
 /*Process Section 1 Start*/
 .processSection1 {
-  padding: 68px 0 20px;
+  padding: 68px 0 0px;
 
   .row {
     .col-lg-6:first-child {
@@ -1812,24 +1812,24 @@ Home CSS
   margin-top: -5px;
 }
 
-.singleInsightSec1-profile a {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #2d2d2d;
-  background: #ececec;
-  border-radius: 28px;
-  width: 167px;
-  height: 42px;
-  line-height: 42px;
-}
+// .singleInsightSec1-profile a {
+//   font-weight: 600;
+//   font-size: 15px;
+//   line-height: 1.2;
+//   text-align: center;
+//   letter-spacing: 0.2px;
+//   color: #2d2d2d;
+//   background: #ececec;
+//   border-radius: 28px;
+//   width: 167px;
+//   height: 42px;
+//   line-height: 42px;
+// }
 
-.singleInsightSec1-profile a:hover {
-  background-color: #57b6b6;
-  color: #fff;
-}
+// .singleInsightSec1-profile a:hover {
+//   background-color: #57b6b6;
+//   color: #fff;
+// }
 
 .singleInsightSec1-profile-img img {
   border-radius: 50%;
