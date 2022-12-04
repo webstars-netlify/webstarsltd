@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import Modal from "react-modal"
 import { storyblokEditable } from "@storyblok/js"
 import moment from "moment"
