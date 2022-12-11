@@ -2,11 +2,22 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 const Guide = ({ blok }) => {
+  console.log("Check --------")
+  console.log(blok.background_color_hex)
   return (
     <div {...storyblokEditable(blok)}>
       <div className="single-insight-guide">
         <div className="custom-container">
-          <div className="marketing-guide">
+          <div
+            className="marketing-guide"
+            style={{
+              backgroundColor: `${
+                blok.background_color_hex
+                  ? blok.background_color_hex
+                  : "#140e10"
+              }`,
+            }}
+          >
             <div className="row">
               <div className="col-md-6 col-lg-6">
                 <div className="marketing-guide-content">
