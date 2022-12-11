@@ -12,8 +12,8 @@ const Guide = ({ blok }) => {
             className="marketing-guide"
             style={{
               backgroundColor: `${
-                blok.background_color_hex
-                  ? blok.background_color_hex
+                blok.marketing_guide[0].background_color_hex
+                  ? blok.marketing_guide[0].background_color_hex
                   : "#140e10"
               }`,
             }}
