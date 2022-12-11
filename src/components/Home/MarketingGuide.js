@@ -2,8 +2,6 @@ import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
 const MarketingGuide = ({ blok }) => {
-  console.log("Check --------")
-  console.log(blok.background_color_hex)
   return (
     <>
       <div {...storyblokEditable(blok)}>
