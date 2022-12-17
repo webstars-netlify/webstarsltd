@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import Categories from "./Categories"
 import InsightList from "./InsightList"
@@ -18,6 +18,8 @@ const DynamicComponent = ({ blok, showMore }) => {
   )
 
   console.log("Dynamic Component", categoryTitle)
+
+  useEffect(() => {}, [categoryTitle])
 
   if (typeof Components[blok.component] !== "undefined") {
     // if (blok.component === "categories") {
