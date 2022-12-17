@@ -4,6 +4,7 @@ import { storyblokEditable } from "@storyblok/js"
 const Categories = ({ blok, setCategoryTitle, categoryTitle }) => {
   const switchCategoryHandler = title => {
     setCategoryTitle(title)
+    localStorage.setItem("title", title)
   }
 
   return (
