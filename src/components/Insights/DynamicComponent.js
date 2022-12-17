@@ -30,7 +30,7 @@ const DynamicComponent = ({ blok, showMore }) => {
     return (
       <Component
         blok={blok}
-        key={blok._uid}
+        // key={blok._uid}
         categoryTitle={categoryTitle}
         setCategoryTitle={setCategoryTitle}
         showMore={showMore}
