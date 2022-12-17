@@ -11,7 +11,9 @@ const ListComponent = ({ story, index, categoryTitle }) => {
   originalStory = useStoryblok(story)
 
   const filteredStory = originalStory.content.body.filter(
-    childBlok => childBlok.insights[0].catgeory_name === categoryTitle
+    childBlok =>
+      blok.component === "insight_display" &&
+      childBlok.insights[0].catgeory_name === categoryTitle
   )
 
   const content =
