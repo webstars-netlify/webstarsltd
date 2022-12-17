@@ -6,10 +6,11 @@ const Components = {
   insight_display: InsightLists,
 }
 
-const DynamicListComponent = ({ blok, slug, index }) => {
+const DynamicListComponent = ({ blok, slug, index, categoryTitle }) => {
   if (
     typeof Components[blok.component] !== "undefined" &&
-    blok.component === "insight_display"
+    blok.component === "insight_display" &&
+    blok.insights[0].catgeory_name === "categoryTitle"
   ) {
     const Component = Components[blok.component]
     return <Component blok={blok} key={blok._uid} slug={slug} index={index} />

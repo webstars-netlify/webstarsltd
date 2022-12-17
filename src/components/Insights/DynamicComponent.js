@@ -17,6 +17,8 @@ const DynamicComponent = ({ blok, showMore }) => {
       : ""
   )
 
+  console.log("Dynamic Component", categoryTitle)
+
   if (typeof Components[blok.component] !== "undefined") {
     if (blok.component === "categories") {
       if (typeof window !== "undefined") {
