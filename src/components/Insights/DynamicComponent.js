@@ -20,11 +20,11 @@ const DynamicComponent = ({ blok, showMore }) => {
   console.log("Dynamic Component", categoryTitle)
 
   if (typeof Components[blok.component] !== "undefined") {
-    if (blok.component === "categories") {
-      if (typeof window !== "undefined") {
-        localStorage.setItem("title", blok.category_list[0].title)
-      }
-    }
+    // if (blok.component === "categories") {
+    //   if (typeof window !== "undefined") {
+    //     localStorage.setItem("title", blok.category_list[0].title)
+    //   }
+    // }
     const Component = Components[blok.component]
 
     return (
