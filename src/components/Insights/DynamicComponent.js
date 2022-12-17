@@ -39,7 +39,7 @@ const DynamicComponent = ({ blok, showMore }) => {
         showMore={showMore}
         setLoading={setLoading}
       />
-    ) : blok.component === "categories" && loading ? (
+    ) : blok.component === "show_insights_list" && loading ? (
       <div>Loadingggggggggggggg</div>
     ) : (
       <InsightList

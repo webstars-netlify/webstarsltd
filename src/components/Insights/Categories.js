@@ -6,7 +6,9 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle, setLoading }) => {
     setLoading(true)
     setCategoryTitle(title)
     localStorage.setItem("title", title)
-    setLoading(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
   }
 
   return (
