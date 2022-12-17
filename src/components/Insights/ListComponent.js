@@ -16,6 +16,12 @@ const ListComponent = ({ story, index, categoryTitle }) => {
       childBlok.insights[0].catgeory_name === categoryTitle
   )
 
+  originalStory.content.body.forEach(childBlok => {
+    if (childBlok.component === "insight_display") {
+      console.log(childBlok.insights[0].catgeory_name, categoryTitle)
+    }
+  })
+
   const content =
     originalStory.content.body &&
     filteredStory.map(childBlok => (
