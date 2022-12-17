@@ -10,9 +10,13 @@ const ListComponent = ({ story, index, categoryTitle }) => {
   let originalStory
   originalStory = useStoryblok(story)
 
+  const filteredStory = originalStory.content.body.filter(
+    childBlok => childBlok.insights[0].catgeory_name === categoryTitle
+  )
+
   const content =
     originalStory.content.body &&
-    originalStory.content.body.map(childBlok => (
+    filteredStory.map(childBlok => (
       <DynamicListComponent
         blok={childBlok}
         key={childBlok._uid}
