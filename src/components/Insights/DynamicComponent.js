@@ -16,6 +16,7 @@ const DynamicComponent = ({ blok, showMore }) => {
         : ""
       : ""
   )
+  const [loading, setLoading] = useState(false)
 
   console.log("Dynamic Component", categoryTitle)
 
@@ -27,10 +28,21 @@ const DynamicComponent = ({ blok, showMore }) => {
     //     localStorage.setItem("title", blok.category_list[0].title)
     //   }
     // }
-    const Component = Components[blok.component]
+    // const Component = Components[blok.component]
 
-    return (
-      <Component
+    return blok.component === "categories" ? (
+      <Categories
+        blok={blok}
+        // key={blok._uid}
+        categoryTitle={categoryTitle}
+        setCategoryTitle={setCategoryTitle}
+        showMore={showMore}
+        setLoading={setLoading}
+      />
+    ) : blok.component === "categories" && loading ? (
+      <div>Loadingggggggggggggg</div>
+    ) : (
+      <InsightList
         blok={blok}
         // key={blok._uid}
         categoryTitle={categoryTitle}
