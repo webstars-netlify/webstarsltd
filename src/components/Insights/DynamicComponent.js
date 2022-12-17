@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 import Categories from "./Categories"
 import InsightList from "./InsightList"
@@ -16,11 +16,11 @@ const DynamicComponent = ({ blok, showMore }) => {
         : ""
       : ""
   )
-  const [loading, setLoading] = useState(false)
 
   console.log("Dynamic Component", categoryTitle)
-
-  useEffect(() => {}, [categoryTitle])
+  const changeCategory = title => {
+    setCategoryTitle(title)
+  }
 
   if (typeof Components[blok.component] !== "undefined") {
     // if (blok.component === "categories") {
@@ -28,25 +28,14 @@ const DynamicComponent = ({ blok, showMore }) => {
     //     localStorage.setItem("title", blok.category_list[0].title)
     //   }
     // }
-    // const Component = Components[blok.component]
+    const Component = Components[blok.component]
 
-    return blok.component === "categories" ? (
-      <Categories
+    return (
+      <Component
         blok={blok}
         // key={blok._uid}
         categoryTitle={categoryTitle}
-        setCategoryTitle={setCategoryTitle}
-        showMore={showMore}
-        setLoading={setLoading}
-      />
-    ) : blok.component === "show_insights_list" && loading ? (
-      <div>Loadingggggggggggggg</div>
-    ) : (
-      <InsightList
-        blok={blok}
-        // key={blok._uid}
-        categoryTitle={categoryTitle}
-        setCategoryTitle={setCategoryTitle}
+        setCategoryTitle={changeCategory}
         showMore={showMore}
       />
     )

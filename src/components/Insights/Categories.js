@@ -1,14 +1,10 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
-const Categories = ({ blok, setCategoryTitle, categoryTitle, setLoading }) => {
+const Categories = ({ blok, setCategoryTitle, categoryTitle }) => {
   const switchCategoryHandler = title => {
-    setLoading(true)
     setCategoryTitle(title)
     localStorage.setItem("title", title)
-    setTimeout(() => {
-      setLoading(false)
-    }, 2000)
   }
 
   return (
