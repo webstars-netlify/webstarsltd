@@ -13,12 +13,16 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
   const filteredStory = originalStory.content.body.filter(
     childBlok =>
       childBlok.component === "insight_display" &&
-      childBlok.insights[0].catgeory_name === categoryTitle
+      childBlok.insights[0].catgeory_name.length &&
+      childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
 
   originalStory.content.body.forEach(childBlok => {
     if (childBlok.component === "insight_display") {
-      console.log(childBlok.insights[0].catgeory_name, categoryTitle)
+      console.log(
+        childBlok.insights[0].catgeory_name,
+        childBlok.insights[0].title
+      )
     }
   })
 
