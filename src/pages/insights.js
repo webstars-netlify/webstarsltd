@@ -54,7 +54,11 @@ const Insights = () => {
       <SEO title="Insights" />
       <Navbar />
       {/* Body Component Starts here */}
-      <MainComponent blok={story.content} showMore={showMore} />
+      <MainComponent
+        blok={story.content}
+        showMore={showMore}
+        setShowMore={setShowMore}
+      />
       {showMore.length < 10 ? (
         <div className="viewMoreParent">
           <button onClick={updateViewMore} className="viewMoreBtn">

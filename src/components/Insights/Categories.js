@@ -1,6 +1,8 @@
 import React from "react"
 import { storyblokEditable } from "@storyblok/js"
 
+import InsightList from "./InsightList"
+
 const Categories = ({ blok, setCategoryTitle, categoryTitle }) => {
   const switchCategoryHandler = title => {
     setCategoryTitle(title)
@@ -43,6 +45,11 @@ const Categories = ({ blok, setCategoryTitle, categoryTitle }) => {
           </div>
         </div>
       </section>
+      <InsightList
+        categoryTitle={categoryTitle}
+        showMore={showMore}
+        setShowMore={setShowMore}
+      />
     </div>
   )
 }

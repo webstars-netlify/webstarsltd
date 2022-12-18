@@ -5,10 +5,10 @@ import InsightList from "./InsightList"
 
 const Components = {
   categories: Categories,
-  show_insights_list: InsightList,
+  // show_insights_list: InsightList,
 }
 
-const DynamicComponent = ({ blok, showMore }) => {
+const DynamicComponent = ({ blok, showMore, setShowMore }) => {
   const [categoryTitle, setCategoryTitle] = useState(
     typeof window !== "undefined"
       ? localStorage.getItem("title") !== null
@@ -23,20 +23,16 @@ const DynamicComponent = ({ blok, showMore }) => {
   }
 
   if (typeof Components[blok.component] !== "undefined") {
-    // if (blok.component === "categories") {
-    //   if (typeof window !== "undefined") {
-    //     localStorage.setItem("title", blok.category_list[0].title)
-    //   }
-    // }
     const Component = Components[blok.component]
 
     return (
       <Component
         blok={blok}
-        // key={blok._uid}
+        key={blok._uid}
         categoryTitle={categoryTitle}
         setCategoryTitle={changeCategory}
         showMore={showMore}
+        setShowMore={setShowMore}
       />
     )
   }

@@ -6,7 +6,7 @@ import { useStoryblok } from "../../utils/storyblok"
 // Page level import statements
 import DynamicListComponent from "./DynamicListComponent"
 
-const ListComponent = ({ story, index, categoryTitle }) => {
+const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
   let originalStory
   originalStory = useStoryblok(story)
 
@@ -15,6 +15,8 @@ const ListComponent = ({ story, index, categoryTitle }) => {
       childBlok.component === "insight_display" &&
       childBlok.insights[0].catgeory_name === categoryTitle
   )
+
+  setShowMore(filteredStory)
 
   originalStory.content.body.forEach(childBlok => {
     if (childBlok.component === "insight_display") {
