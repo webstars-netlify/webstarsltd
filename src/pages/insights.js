@@ -42,6 +42,7 @@ const Insights = () => {
   const [showMore, setShowMore] = useState(insights.edges.slice(0, 8))
 
   story = useStoryblok(story)
+  console.log(insights.edges[0])
 
   const updateViewMore = () => {
     const copy = insights.edges.slice(0)
