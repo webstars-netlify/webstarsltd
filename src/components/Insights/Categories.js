@@ -3,7 +3,13 @@ import { storyblokEditable } from "@storyblok/js"
 
 import InsightList from "./InsightList"
 
-const Categories = ({ blok, setCategoryTitle, categoryTitle }) => {
+const Categories = ({
+  blok,
+  setCategoryTitle,
+  categoryTitle,
+  setShowMore,
+  showMore,
+}) => {
   const switchCategoryHandler = title => {
     setCategoryTitle(title)
     localStorage.setItem("title", title)
