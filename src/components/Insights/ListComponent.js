@@ -16,7 +16,7 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
       childBlok.insights[0].catgeory_name === categoryTitle
   )
 
-  setShowMore(filteredStory)
+  // setShowMore(filteredStory)
 
   originalStory.content.body.forEach(childBlok => {
     if (childBlok.component === "insight_display") {
