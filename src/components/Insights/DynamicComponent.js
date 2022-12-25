@@ -22,7 +22,7 @@ const DynamicComponent = ({ blok, showMore, setShowMore, insights }) => {
     if (title === categoryTitle) {
       setCategoryTitle("")
       localStorage.removeItem("title")
-      setShowMore(insights.edges.slice(0, 8))
+      setShowMore(insights.edges.slice(0))
     } else {
       setCategoryTitle(title)
     }
