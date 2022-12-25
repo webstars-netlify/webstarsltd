@@ -13,14 +13,14 @@ const DynamicComponent = ({ blok, showMore, setShowMore, updateViewMore }) => {
     typeof window !== "undefined"
       ? localStorage.getItem("title") !== null
         ? localStorage.getItem("title")
-        : ""
+        : "All"
       : ""
   )
 
   const changeCategory = title => {
     if (title === categoryTitle) {
-      setCategoryTitle("")
-      localStorage.removeItem("title")
+      setCategoryTitle("All")
+      localStorage.setItem("title", "All")
       updateViewMore()
     } else {
       setCategoryTitle(title)

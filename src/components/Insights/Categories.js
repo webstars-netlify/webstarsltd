@@ -13,8 +13,8 @@ const Categories = ({
 }) => {
   const switchCategoryHandler = title => {
     if (title === categoryTitle) {
-      setCategoryTitle("")
-      localStorage.removeItem("title")
+      setCategoryTitle("All")
+      localStorage.setItem("title", "All")
       updateViewMore()
     } else {
       setCategoryTitle(title)
