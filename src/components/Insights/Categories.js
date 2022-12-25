@@ -11,8 +11,14 @@ const Categories = ({
   showMore,
 }) => {
   const switchCategoryHandler = title => {
-    setCategoryTitle(title)
-    localStorage.setItem("title", title)
+    if (title === categoryTitle) {
+      setCategoryTitle("")
+      localStorage.removeItem("title")
+      setShowMore(insights.edges.slice(0, 8))
+    } else {
+      setCategoryTitle(title)
+      localStorage.setItem("title", title)
+    }
   }
 
   return (
