@@ -17,7 +17,6 @@ const DynamicComponent = ({ blok, showMore, setShowMore, insights }) => {
       : ""
   )
 
-  console.log("Dynamic Component", categoryTitle)
   const changeCategory = title => {
     if (title === categoryTitle) {
       setCategoryTitle("")
@@ -34,6 +33,7 @@ const DynamicComponent = ({ blok, showMore, setShowMore, insights }) => {
     return (
       <Component
         blok={blok}
+        insights={insights}
         key={blok._uid}
         categoryTitle={categoryTitle}
         setCategoryTitle={changeCategory}

@@ -6,6 +6,7 @@ import InsightList from "./InsightList"
 const Categories = ({
   blok,
   setCategoryTitle,
+  insights,
   categoryTitle,
   setShowMore,
   showMore,
