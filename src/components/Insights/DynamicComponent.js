@@ -8,7 +8,7 @@ const Components = {
   // show_insights_list: InsightList,
 }
 
-const DynamicComponent = ({ blok, showMore, setShowMore }) => {
+const DynamicComponent = ({ blok, showMore, setShowMore, insights }) => {
   const [categoryTitle, setCategoryTitle] = useState(
     typeof window !== "undefined"
       ? localStorage.getItem("title") !== null
@@ -21,6 +21,8 @@ const DynamicComponent = ({ blok, showMore, setShowMore }) => {
   const changeCategory = title => {
     if (title === categoryTitle) {
       setCategoryTitle("")
+      localStorage.removeItem("title")
+      setShowMore(insights.edges.slice(0, 8))
     } else {
       setCategoryTitle(title)
     }
