@@ -9,13 +9,7 @@ const Components = {
 }
 
 const DynamicComponent = ({ blok, showMore, setShowMore, updateViewMore }) => {
-  const [categoryTitle, setCategoryTitle] = useState(
-    typeof window !== "undefined"
-      ? localStorage.getItem("title") !== null
-        ? localStorage.getItem("title")
-        : ""
-      : ""
-  )
+  const [categoryTitle, setCategoryTitle] = useState()
 
   const changeCategory = title => {
     if (title === categoryTitle) {
