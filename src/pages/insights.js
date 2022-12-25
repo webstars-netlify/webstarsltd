@@ -56,7 +56,7 @@ const Insights = () => {
       {/* Body Component Starts here */}
       <MainComponent
         blok={story.content}
-        insights={insights}
+        updateViewMore={updateViewMore}
         showMore={showMore}
         setShowMore={setShowMore}
       />
