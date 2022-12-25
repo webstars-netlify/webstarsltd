@@ -19,7 +19,11 @@ const DynamicComponent = ({ blok, showMore, setShowMore }) => {
 
   console.log("Dynamic Component", categoryTitle)
   const changeCategory = title => {
-    setCategoryTitle(title)
+    if (title === categoryTitle) {
+      setCategoryTitle("")
+    } else {
+      setCategoryTitle(title)
+    }
   }
 
   if (typeof Components[blok.component] !== "undefined") {
