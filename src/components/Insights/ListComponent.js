@@ -19,23 +19,17 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
 
   const content =
     originalStory.content.body &&
-    filteredStory.map((childBlok, index) => (
-      <div className="col-md-6 col-lg-6" key={index}>
-        <DynamicListComponent
-          blok={childBlok}
-          // key={childBlok._uid}
-          slug={story.slug}
-          index={index}
-          categoryTitle={categoryTitle}
-        />
-      </div>
+    filteredStory.map(childBlok => (
+      <DynamicListComponent
+        blok={childBlok}
+        key={childBlok._uid}
+        slug={story.slug}
+        index={index}
+        categoryTitle={categoryTitle}
+      />
     ))
 
-  return (
-    <div {...storyblokEditable(originalStory.content)}>
-      <div className="row">{content}</div>
-    </div>
-  )
+  return <div {...storyblokEditable(originalStory.content)}>{content}</div>
 }
 
 export default ListComponent

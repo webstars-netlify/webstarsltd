@@ -7,15 +7,18 @@ const InsightLists = ({ showMore, categoryTitle, setShowMore }) => {
     <>
       <div className="insight-display ptb-40 insight-display-list">
         <div className="container">
-          {showMore.map((originalStory, index) => (
-            <ListComponent
-              key={index}
-              story={originalStory.node}
-              index={index}
-              categoryTitle={categoryTitle}
-              setShowMore={setShowMore}
-            />
-          ))}
+          <div className="row">
+            {showMore.map((originalStory, index) => (
+              <div className="col-md-6 col-lg-6" key={index}>
+                <ListComponent
+                  story={originalStory.node}
+                  index={index}
+                  categoryTitle={categoryTitle}
+                  setShowMore={setShowMore}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
