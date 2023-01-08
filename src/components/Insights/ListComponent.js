@@ -10,6 +10,12 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
   let originalStory
   originalStory = useStoryblok(story)
 
+  if (typeof window !== "undefined") {
+    const element = document.getElementById("undefined-content")
+    console.log("------")
+    console.log(element)
+  }
+
   const filteredStory = originalStory.content.body.filter(
     childBlok =>
       childBlok.component === "insight_display" &&
@@ -29,11 +35,7 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
       />
     ))
 
-  return (
-    <div {...storyblokEditable(originalStory.content)} id="undefined-content">
-      {content}
-    </div>
-  )
+  return <div {...storyblokEditable(originalStory.content)}>{content}</div>
 }
 
 export default ListComponent

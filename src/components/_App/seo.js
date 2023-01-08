@@ -1,7 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { withPrefix } from "gatsby"
 
 function SEO({ metaTitle, description, lang, meta, title }) {
   const metaDescription = description
@@ -72,9 +71,7 @@ function SEO({ metaTitle, description, lang, meta, title }) {
         //   content: ogImage,
         // },
       ].concat(meta)}
-    >
-      <script src={withPrefix("script.js")} type="text/javascript" />
-    </Helmet>
+    ></Helmet>
   )
 }
 
