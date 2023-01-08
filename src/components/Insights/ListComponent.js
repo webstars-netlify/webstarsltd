@@ -10,18 +10,6 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
   let originalStory
   originalStory = useStoryblok(story)
 
-  if (typeof window !== "undefined") {
-    const element = document.getElementById("undefined-content").firstChild
-    console.log("------")
-    console.log(element)
-    console.log(
-      document.getElementById("undefined-content").firstChild.nodeName
-    )
-    console.log(
-      document.getElementById("undefined-content").firstChild.firstChild
-    )
-  }
-
   const filteredStory = originalStory.content.body.filter(
     childBlok =>
       childBlok.component === "insight_display" &&
