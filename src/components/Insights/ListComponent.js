@@ -11,10 +11,12 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
   originalStory = useStoryblok(story)
 
   if (typeof window !== "undefined") {
-    const element =
-      document.getElementById("undefined-content").childElementCount
+    const element = document.getElementById("undefined-content").firstChild
     console.log("------")
     console.log(element)
+    console.log(
+      document.getElementById("undefined-content").firstChild.nodeName
+    )
   }
 
   const filteredStory = originalStory.content.body.filter(
