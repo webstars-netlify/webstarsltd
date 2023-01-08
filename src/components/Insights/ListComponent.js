@@ -17,10 +17,6 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
       childBlok.insights[0].catgeory_name.includes(categoryTitle)
   )
 
-  console.log(
-    `---- original store ${JSON.stringify(originalStory.content.body)}`
-  )
-
   const content =
     originalStory.content.body &&
     filteredStory.map(childBlok => (
@@ -33,7 +29,11 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
       />
     ))
 
-  return <div {...storyblokEditable(originalStory.content)}>{content}</div>
+  return (
+    <div {...storyblokEditable(originalStory.content)} id="undefined-content">
+      {content}
+    </div>
+  )
 }
 
 export default ListComponent
