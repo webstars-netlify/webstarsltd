@@ -11,7 +11,8 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
   originalStory = useStoryblok(story)
 
   if (typeof window !== "undefined") {
-    const element = document.getElementById("undefined-content")
+    const element =
+      document.getElementById("undefined-content").childElementCount
     console.log("------")
     console.log(element)
   }
