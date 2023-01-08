@@ -2,9 +2,12 @@ import { Link } from "gatsby"
 import React from "react"
 
 const InsightLists = ({ blok, slug, index }) => {
-  const element = document.getElementById("undefined-content")
-  console.log("------")
-  console.log(element)
+  if (typeof window !== "undefined") {
+    const element = document.getElementById("undefined-content")
+    console.log("------")
+    console.log(element)
+  }
+
   return (
     <>
       {
