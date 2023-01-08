@@ -8,7 +8,7 @@ const InsightLists = ({ showMore, categoryTitle, setShowMore }) => {
       <div className="insight-display ptb-40 insight-display-list">
         <div className="container">
           <div className="row">
-            {showMore.filter((originalStory, index) => (
+            {showMore.map((originalStory, index) => (
               <div className="col-md-6 col-lg-6" key={index}>
                 {console.log(`node ${JSON.stringify(originalStory.node)}`)}
                 <div>haha</div>
