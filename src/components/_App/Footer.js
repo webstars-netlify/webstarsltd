@@ -5,6 +5,17 @@ import Logo from "../../assets/images/logo-white.png"
 
 // This is a global footer component for the webstarsltd template
 const Footer = () => {
+  if (typeof window !== "undefined") {
+    const element = document.getElementById("undefined-content").firstChild
+    console.log("------")
+    console.log(element)
+    console.log(
+      document.getElementById("undefined-content").firstChild.nodeName
+    )
+    console.log(
+      document.getElementById("undefined-content").firstChild.firstChild
+    )
+  }
   return (
     <footer>
       <div className="container">
