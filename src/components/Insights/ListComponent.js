@@ -17,6 +17,9 @@ const ListComponent = ({ story, index, categoryTitle, setShowMore }) => {
     console.log(
       document.getElementById("undefined-content").firstChild.nodeName
     )
+    console.log(
+      document.getElementById("undefined-content").firstChild.firstChild
+    )
   }
 
   const filteredStory = originalStory.content.body.filter(
